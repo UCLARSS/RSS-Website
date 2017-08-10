@@ -20,11 +20,28 @@ h6 {
     background-color: #2C86C0;
     background: #2C86C0;
     border-color: #2C86C0;
+    height: 60px;
+    width: 100%;
+}
+.bottomnav {
+    font-size: 14px; 
+    background-color: #FFE700;
+    background: #FFE700;
+    border-color: #FFE700;
+    width: 100%;
 }
 
 .lead {
     font-size: 18px;
     font-weight: 400;
+}
+#navbar{
+    padding: 0 -10px 0 -10px;
+    width: 100%;
+    background-color: #FFE700;
+    color: #FFE700;
+    background: #FFE700;;
+    border-color: #FFE700;
 }
 #titletext{
     -webkit-animation-duration: 2s;
@@ -53,7 +70,7 @@ h6 {
     padding-top: 10px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
-    background: url(../img/intro-bg.gif) no-repeat center center;
+    background: url(../img/banner-bg.jpg) no-repeat center center;
     background-size: cover;
 }
 
