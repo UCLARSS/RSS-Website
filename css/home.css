@@ -11,24 +11,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Montserrat
-    // "Lato","Helvetica Neue",Helvetica,Arial,sans-serif; 
+    font-family: Montserrat;
     font-weight: 700;
-}
-.topnav {
-    font-size: 14px; 
-    background-color: #2C86C0;
-    background: #2C86C0;
-    border-color: #2C86C0;
-    height: 60px;
-    width: 100%;
-}
-.bottomnav {
-    font-size: 14px; 
-    background-color: #FFE700;
-    background: #FFE700;
-    border-color: #FFE700;
-    width: 100%;
 }
 
 .lead {
@@ -38,10 +22,9 @@ h6 {
 #navbar{
     padding: 0 -10px 0 -10px;
     width: 100%;
+    margin-top: 10px;
     background-color: #FFE700;
-    color: #FFE700;
-    background: #FFE700;;
-    border-color: #FFE700;
+    color:#FFE700;
 }
 #titletext{
     -webkit-animation-duration: 2s;
