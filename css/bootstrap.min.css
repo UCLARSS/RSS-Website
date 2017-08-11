@@ -4259,7 +4259,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 @media (min-width: 768px) {
     .navbar-header {
-        float: left
+        float: left;
     }
 }
 .navbar-collapse {
@@ -4308,7 +4308,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .container>.navbar-collapse,
 .container>.navbar-header {
     margin-right: -15px;
-    margin-left: -15px
+    margin-left: -15px;
 }
 @media (min-width: 768px) {
     .container-fluid>.navbar-collapse,
@@ -4354,9 +4354,10 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .navbar-brand {
     float: left;
     height: 50px;
-    padding: 15px 15px;
+    padding: 10px 15px;
     font-size: 18px;
-    line-height: 20px
+    line-height: 20px;
+    color: #FFFFFF;
 }
 .navbar-brand:focus,
 .navbar-brand:hover {
@@ -4403,10 +4404,11 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .navbar-nav {
     margin: 7.5px -15px
 }
-.navbar-nav>li>a {
+.navbar-nav>li>a { /*STYLING FOR ROW 2 OF NAV BAR*/
     padding-top: 10px;
     padding-bottom: 10px;
-    line-height: 20px
+    line-height: 20px;
+    color: #000000;
 }
 @media (max-width: 767px) {
     .navbar-nav .open .dropdown-menu {
@@ -4565,7 +4567,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
         float: left!important
     }
     .navbar-right {
-        margin-top: -40px;
+        margin-top: -50px;
         margin-left: 800px;
     }
     .navbar-right~.navbar-right {
