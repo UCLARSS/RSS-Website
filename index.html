@@ -26,223 +26,62 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
 </head>
-
-    <!-- Navigation -->
-    <div name="nav"class="container-fullwidth" style="background-color:#2C86C0; min-height: 60px;">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-                <span><img src="img/ucla_logo.png" width="40" height="40" class="d-inline-block align-top" alt=""></span>
-                REGENTS SCHOLAR SOCIETY AT UCLA
-            </a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="#">LinkA</a></li>
-              <li><a href="#">LinkB</a></li>
-              <li><a href="#">LinkC</a></li>
-              <li><a href="#">LinkD</a></li>
-              <li><a href="#">LinkE</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right" >
-              <li><button type="button" class="btn btn-outline-primary">LOG IN</button></li>
-            </ul>
-        </div><!--/.nav-collapse -->
+<body>
+<!-- 
+dark
+-->
+<nav class="navbar navbar-toggleable-sm bg-inverse navbar-inverse fixed-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbar2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            <a href="/" class="navbar-brand">REGENTS SCHOLAR SOCIETY AT UCLA</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item pull-xs-right">
+                <button type="button" class="btn btn-outline-info" "style=float:right;">LOG IN</button>
+            </li>
+        </ul>
     </div>
-
-
-    <!-- Header -->
-    <a name="about"></a>
-    <div class="intro-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message" style="white-space:nowrap">
-                        <h1 id = "titletext" class = "animated fadeInDown" style = "display:inline-block">
-                            WELCOME<br>
-                        </h1>
-
-                        <h3 id = "titletext" class = "animated fadeInDown">REGENT SCHOLARS</h3>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <!-- TODO: THESE NEED TO BE UPDATED -->
-                            <li>
-                                <a id = "intro-button1" href="https://www.facebook.com/events/234313063699440/?notif_t=plan_user_invited&notif_id=1488673424004287" class="btn btn-primary btn-lg animated fadeInUp"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Event</span></a>
-                            </li>
-                            <li>
-                                <a id = "intro-button2" href="registration.html" class="btn btn-success btn-lg animated fadeInUp"><i class="fa fa-address-card-o" style = "padding-right:5px"></i> <span class="network-name">Register</span></a>
-                            </li>
-
-                            <li role="presentation">
-                                <a id = "intro-button3" href="https://mail.google.com/mail/?view=cm&fs=1&to=arl@rssla.org" class="btn btn-info btn-lg animated fadeInUp"><i class="fa fa-envelope-o" style = "padding-right:5px"></i> <span class="network-name">Contact</span></a>
-                            </li>
-                        </ul>
-                        <h3 id = "titletext" class = "animated fadeInDown">April 28-30</h3>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
+</nav>
+<!-- 
+faded
+-->
+<nav class="navbar navbar-toggleable-sm bg-faded navbar-light fixed-top fixed-top-2">
+    <a href="/" class="navbar-brand">Bottom</a>
+    <div class="navbar-collapse collapse" id="navbar1">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Link <span class="sr-only">Home</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+        </ul>
     </div>
-    <!-- /.intro-header -->
-
-    <!-- Page Content -->
-
-	<a  name="info"></a>
-    <div class="content-section-a">
-
-        <div id = "animatethis" class="container">
-            <div class="row">
-                <div id = "animations" class="col-md-6 col-md-6 col-xs-12 animationholder">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">About this Event</h2>
-                    <p class="lead">The Inter-UC Conference is an annual event where Regents Scholars from all 9 of our UC campuses come together for a fun weekend of workshops, distinguished speakers, and outdoor activities! This year's Inter-UC Conference will be held at UCLA from April 28th to April 30th. The theme of Inter-UC Conference this year will be, fittingly, "Coming Together." </p>
-
-                    <br>
-                    <br>
-                    <br>
-                </div>
-            </div> <!-- end row -->
-            <div id = "animatethis" class = "row" >
-                <div id = "animations" class="col-md-3 col-md-offset-1 col-xs-24 col-xs-offset-3 animationholder">
-                    <a href="#parkingsection">
-                      <!-- currently not linked to anything so set it to parking until a map is added -->
-                      <img src="img/icons/map.png" id = "icons" class="custom-icon">
-                    </a>
-                    <h3 class="heading" style="padding-left:43px;">Map</h3>
-                </div>
-                <div id = "animations" class="col-md-3 col-md-offset-1 col-xs-24 col-xs-offset-3 animationholder">
-                    <a href="img/Info/Waiver.pdf">
-                        <img src="img/icons/schedule.png" id = "icons" class="custom-icon">
-                    </a>
-                    <h3 class="heading"style="padding-left:32px;">Waiver</h3>
-                </div>
-                <div id = "animations" class="col-md-3 col-md-offset-1 col-xs-24 col-xs-offset-3 animationholder">
-                    <a href="packing-list.html">
-                        <img src="img/icons/backpack.png" id = "icons" class="custom-icon">
-                    </a>
-                    <h3 class="heading"style="padding-left:10px;">Packing List</h3>
-                </div>
-            </div>
-            <div class = "row">
-                <br>
-                <br>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-    <a name ="parkingsection"></a>
-    <div class="content-section-b">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6"> <!--map goes here-->
-                <div id="map" style="width:100%;height:400px;margin-bottom:45px;background:white">
-                    <script>
-                    function myMap() {
-                        var ucla_campus = {lat: 34.069537, lng: -118.445109};
-                        var lot11 = {lat:34.073035, lng:-118.453563};
-                        var map = new google.maps.Map(document.getElementById('map'), {
-                          zoom: 15,
-                          center: ucla_campus,
-                          mapTypeControl: false,
-                          disableDefaultUI: true,
-                          scrollwheel: false,
-                          styles: [{"featureType":"all","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"on"},{"color":"#f3f4f4"}]},{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"weight":0.9},{"visibility":"on"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#83cead"}]},{"featureType":"road","elementType":"all","stylers":[{"visibility":"on"},{"color":"#ffffff"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"on"},{"color":"#fee379"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"visibility":"on"},{"color":"#fee379"}]},{"featureType":"water","elementType":"all","stylers":[{"visibility":"on"},{"color":"#7fc8ed"}]}]
-                        });
-                        // Resize stuff...
-                        google.maps.event.addDomListener(window, "resize", function() {
-                           var center = map.getCenter();
-                           google.maps.event.trigger(map, "resize");
-                           map.setCenter(center);
-                        });
-
-                        var marker = new google.maps.Marker({ //TODO: make it so that hovering over the icon says like lot 11
-                          position: lot11,
-                          draggable: false,
-                          map: map,
-                          title: 'Parking',
-                            icon: {
-                                url: "img/parking_icon.png",
-                                scaledSize: new google.maps.Size(40, 40)
-                            }
-                        });
-
-                    }
-                    </script>
-                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsCXNpX0AVNSIo5T15MK88PveixNOn_1E&callback=myMap">
-                    </script>
-                    google.maps.event.addListener(marker, 'click', function() {window.location.href = marker.url;});
-                </div>
-            </div>
-            <div class="col-md-6">
-                <hr class="section-heading-spacer">
-                <div class="clearfix"></div>
-                <h2 class="section-heading">Directions and Parking</h2>
-                <p class = "lead">Coming Soon!</p>
-            </div>
-        </div>
-        <!-- /.container -->
-    </div>
-    <!-- /.content-section-b -->
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="http://www.rssla.org/">RSSLA</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="https://interucconference.berkeley.edu/">Last Year's</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                    </ul>
-                    <p class="copyright text-muted small">Coded by <a href = "https://github.com/lidanieltiger">Daniel Li.</a> This material is for informational purposes only. It is not created for commercial gain.   </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-        $(document).scroll(function () {
-            var y = $(window).scrollTop() + $(window).height();
-            var x = $("#animatethis").position();
-
-            if (y > (x.top)) { // -50 so things don't overlap
-                $(".animationholder").addClass(
-                    "animated fadeInUp");
-                $(".animationholder").addClass(
-                    "onfocus");
-            }
-            else {
-                $(".holder").removeClass(
-                    "animated fadeInUp");
-            }
-        });
-
-    </script>
+</nav>
 
 
+<div class="container-fluid py-3">
+    <h2>Content here..</h2>
+    <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch. Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape 
+swag wolf squid tote bag. Tote bag cronut semiotics, raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade 
+ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics ugh 
+synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p> 
+
+<p>Ethical Kickstarter PBR 
+asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free Kickstarter artisan 
+Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb 
+readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy 
+leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, 
+forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.</p>
+</div>
 </body>
 
 </html>
