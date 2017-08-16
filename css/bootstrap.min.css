@@ -3865,7 +3865,7 @@ tbody.collapse.show {
     padding-bottom: .25rem;
     margin-right: 1rem;
     font-size: 1.25rem;
-    font-weight:100;
+    font-weight:lighter;
     letter-spacing:2px;
     line-height: inherit;
     font-family: 'Montserrat';
