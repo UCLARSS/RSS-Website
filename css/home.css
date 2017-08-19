@@ -28,9 +28,6 @@ body {
     padding-top: 5.5rem; /*Prevents us from hitting the navbar*/
     height:100%;
 }
-.home-content{
-    border: 1px solid red; 
-}
 .home-body{
     height:60rem;
 }
