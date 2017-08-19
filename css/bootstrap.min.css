@@ -5577,7 +5577,9 @@ button.close {
 .carousel-item {
     position: relative;
     display: none;
-    width: 100%
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 35rem;
 }
 @media (-webkit-transform-3d) {
     .carousel-item {
