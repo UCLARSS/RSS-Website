@@ -21,7 +21,7 @@ h6 {
     background-color:#FFE700;
 }
 body {
-    padding-top: 105px;
+    padding-top: 5.5rem; /*Prevents us from hitting the navbar*/
 }
 #topnav{ /*set top navbar to light blue*/
     background-color: #2c86c0!important;
