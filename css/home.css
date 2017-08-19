@@ -20,12 +20,29 @@ h6 {
     height:2.2rem;
     background-color:#FFE700;
 }
-body {
-    padding-top: 5.5rem; /*Prevents us from hitting the navbar*/
-}
 #topnav{ /*set top navbar to light blue*/
     background-color: #2c86c0!important;
     height:3.5rem
+}
+body {
+    padding-top: 5.5rem; /*Prevents us from hitting the navbar*/
+    height:100%;
+}
+.home-content{
+    border: 1px solid red; 
+}
+.home-body{
+    height:60rem;
+}
+.home-right{
+
+}
+.home-left{
+    background-color: #2c86c0!important;
+}
+.home-bottom{
+    height:8rem;
+    background-color:#FFE700;
 }
 /*hidden image for the banner*/
 .img-hidden{
