@@ -45,6 +45,34 @@ body {
 .img-hidden{
     visibility: hidden;
 }
+/*custom css to deal with parallax in carousel*/
+.parallax{
+    height: 500px; 
+    opacity:0.7;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+/*custom css to deal with welcome text*/
+/*TODO: implement css inheritance*/
+.carouselText-bottom { 
+    font-size:350%; 
+    letter-spacing:2px; 
+    color:#FFE700; 
+    font-weight:900; 
+    text-shadow: 1px 0 #FFE700; 
+    padding-left:15rem
+}
+.carouselText-top {
+    font-size:300%; 
+    letter-spacing:2px; 
+    color:#FFFFFF; 
+    font-weight:900; 
+    text-shadow: 1px 0 #FFFFFF; 
+    padding-left: 5rem;
+}
 /*custom login button css TODO: trim down unnecessary stuff*/
 .btn-outline-login {
     color: #FFFFFF;
