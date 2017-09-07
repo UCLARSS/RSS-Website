@@ -23,6 +23,8 @@
     <!-- Custom tab icon -->
     <link rel="shortcut icon" href="favicon.ico">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -57,6 +59,7 @@
 <!-- 
 TOP
 -->
+<div class="container-fluid">
 <nav class="navbar navbar-toggleable-sm navbar-inverse fixed-top" id="topnav">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2">
         <span class="navbar-toggler-icon"></span>
@@ -71,6 +74,12 @@ TOP
             </li>
         </ul>
         <ul class="navbar-nav">
+            <li class="nav-item">
+              <a style="font-size:1.5rem; padding-right:1rem;padding-top:0.3rem;color:white;text-decoration:none;" class="fa" href="https://www.instagram.com/uclarss/">&#xf16d;</a>
+            </li>
+            <li class="nav-item">
+              <a style="font-size:1.5rem; padding-right:1rem;padding-top:0.3rem;color:white;text-decoration:none;" class="fa" href="https://www.facebook.com/groups/2200018188/">&#xf082;</a>
+            </li>
             <li class="nav-item">
                 <button type="button" class="btn btn-outline-login" data-toggle="modal" data-target="#myModal" style="float:right;">LOG IN</button>
             </li>
@@ -103,8 +112,8 @@ BOTTOM
         </ul>
     </div>
 </nav>
+</div>
 <!-- end navbar-->
-
 <!--PHOTO CAROUSEL CAPTION-->
 <div class="carousel-caption d-none d-md-block">
   <div class="carouselText-top" style="display: flex;">
@@ -135,7 +144,6 @@ BOTTOM
   </div>
 </div>
 <!--PHOTO CAROUSEL-->
-
 <div id="carouselExampleControls" class="carousel data-slide" data-ride="carousel">
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active parallax"  style="background-image: url(img/banner-bg1.jpg);">
@@ -172,7 +180,7 @@ BOTTOM
 <!-- events left column -->
 <div class="container-fluid">
   <div class="row home-body">
-    <div class="col-4 home-left">
+    <div class="col-4 home-left hidden-md-down">
     	<div style="padding-left:5rem; padding-top:2rem; padding-right:3rem" >
 			<h2 style="letter-spacing:2px; color:#FFFFFF; font-weight:900; text-shadow: 1px 0 #FFFFFF;">EVENTS</h2>
 
@@ -263,7 +271,7 @@ BOTTOM
   </div>
   <!-- Footer (Contact, Sponsors) -->
   <div class="row home-bottom">
-		<div class="col-4 home-bottomleft" style="padding-top:1rem; padding-left:5rem;">
+		<div class="col-4 home-bottomleft hidden-md-down" style="padding-top:1rem; padding-left:5rem;">
 		  <p>CONTACT</p>
       <p style="padding-top:1rem; font-size:65%;color:black;">-contact the Society</p>
       <p style="font-size:65%;color:black;">-contact the Daniel</p>
@@ -274,7 +282,7 @@ BOTTOM
         <img src="img/sponsors/blueprint-logo.png" style="padding-left:2rem;max-width:14rem; height:auto;"></img>
         <img src="img/sponsors/kaplan-logo.png" style="padding-left:2rem; max-width:10rem; height:auto;"></img>
       </span>
-      <p style="padding-top:3rem; font-size:65%;color:black;">&copy Code by Daniel Li, Design by Amy Ye</p>
+      <p style="padding-top:3rem; font-size:65%;color:black;">&copy2017 Code by Daniel Li, Design by Amy Ye</p>
 		</div>
 	</div>
 </div>

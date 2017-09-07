@@ -49,6 +49,7 @@ body {
     visibility: hidden;
 }
 /*custom css to deal with parallax in carousel*/
+/*it also deals with the image filter*/
 .parallax{
     height: 500px; 
     opacity:0.7;
