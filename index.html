@@ -20,6 +20,9 @@
     <!-- Custom CSS -->
     <link href="css/home.css" rel="stylesheet">
     
+    <!-- Custom tab icon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -50,6 +53,7 @@
 </div>
 <!-- end modal-->
 
+<!-- start navbar -->
 <!-- 
 TOP
 -->
@@ -84,10 +88,14 @@ BOTTOM
                     HOME
                 </a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="about.html" style="margin-left:2.5rem;">
-                    ABOUT
-                </a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="margin-left:2.5rem; color:black;" >ABOUT</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="about.html">Eboard</a>
+                <a class="dropdown-item" href="committee.html">Committees</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Scholarship</a>
+              </div>
             </li>
             <li class="nav-item active" style="margin-left:2.5rem;">
                 <a class="nav-link" href="events.html">EVENTS</a>
@@ -128,9 +136,9 @@ BOTTOM
 </div>
 <!--PHOTO CAROUSEL-->
 
-<div id="carouselExampleControls" class="carousel" data-ride="carousel">
+<div id="carouselExampleControls" class="carousel data-slide" data-ride="carousel">
   <div class="carousel-inner" role="listbox">
-    <div class="carousel-item active parallax"  style="background-image: url(img/banner-bg.jpg);">
+    <div class="carousel-item active parallax"  style="background-image: url(img/banner-bg1.jpg);">
       <img class="d-block img-hidden" src="http://placehold.it/400x400" alt="First slide">
     </div>
     <div class="carousel-item parallax"  style="background-image: url(img/banner-bg2.jpg);">
@@ -139,7 +147,13 @@ BOTTOM
     <div class="carousel-item parallax"  style="background-image: url(img/banner-bg3.jpg);">
       <img class="d-block img-hidden" src="http://placehold.it/400x400" alt="Third slide">
     </div>
-    <div class="carousel-item parallax"  style="background-image: url(img/conference-banner.jpg);">
+    <div class="carousel-item parallax"  style="background-image: url(img/banner-bg4.jpg);">
+      <img class="d-block img-hidden" src="http://placehold.it/400x400" alt="Fourth slide">
+    </div>
+    <div class="carousel-item parallax"  style="background-image: url(img/banner-bg5.jpg);">
+      <img class="d-block img-hidden" src="http://placehold.it/400x400" alt="Fourth slide">
+    </div>
+    <div class="carousel-item parallax"  style="background-image: url(img/banner-bg6.jpg);">
       <img class="d-block img-hidden" src="http://placehold.it/400x400" alt="Fourth slide">
     </div>
 
@@ -247,6 +261,7 @@ BOTTOM
      	</div>
     </div>
   </div>
+  <!-- Left column (Contact) -->
   <div class="row home-bottom">
 		<div class="col-4 home-bottomleft">
 		1 of 2
