@@ -20,6 +20,11 @@
     <!-- Custom CSS -->
     <link href="css/home.css" rel="stylesheet">
     
+    <!-- Custom tab icon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -27,9 +32,34 @@
 
 </head>
 <body>
+<!--create temporary dialog box -->
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Coming Soon</h4>
+      </div>
+      <div class="modal-body">
+        <p>This feature is in development. Thank you for your patience.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- end modal-->
+
+<!-- start navbar -->
 <!-- 
 TOP
 -->
+<div class="container-fluid">
 <nav class="navbar navbar-toggleable-sm navbar-inverse fixed-top" id="topnav">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2">
         <span class="navbar-toggler-icon"></span>
@@ -45,7 +75,13 @@ TOP
         </ul>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <button type="button" class="btn btn-outline-login" style="float:right;">LOG IN</button>
+              <a style="font-size:1.5rem; padding-right:1rem;padding-top:0.3rem;color:white;text-decoration:none;" class="fa" href="https://www.instagram.com/uclarss/">&#xf16d;</a>
+            </li>
+            <li class="nav-item">
+              <a style="font-size:1.5rem; padding-right:1rem;padding-top:0.3rem;color:white;text-decoration:none;" class="fa" href="https://www.facebook.com/groups/2200018188/">&#xf082;</a>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn btn-outline-login" data-toggle="modal" data-target="#myModal" style="float:right;">LOG IN</button>
             </li>
         </ul>
     </div>
@@ -61,10 +97,14 @@ BOTTOM
                     HOME
                 </a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="about.html" style="margin-left:2.5rem;">
-                    ABOUT
-                </a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="margin-left:2.5rem; color:black;" >ABOUT</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="about.html">Eboard</a>
+                <a class="dropdown-item" href="committee.html">Committees</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Scholarship</a>
+              </div>
             </li>
             <li class="nav-item active" style="margin-left:2.5rem;">
                 <a class="nav-link" href="events.html">EVENTS</a>
@@ -72,7 +112,8 @@ BOTTOM
         </ul>
     </div>
 </nav>
-
+</div>
+<!-- end navbar-->
 <!--PHOTO CAROUSEL CAPTION-->
 <div class="carousel-caption d-none d-md-block">
   <div class="carouselText-top" style="display: flex;">
@@ -92,7 +133,7 @@ BOTTOM
     <div data-scroll-speed="3">N</div>
     <div data-scroll-speed="9">T</div>
 
-    <div data-scroll-speed="6"> S</div>
+    <div data-scroll-speed="6">&nbspS</div>
     <div data-scroll-speed="8">C</div>
     <div data-scroll-speed="7">H</div>
     <div data-scroll-speed="6">O</div>
@@ -103,10 +144,9 @@ BOTTOM
   </div>
 </div>
 <!--PHOTO CAROUSEL-->
-
-<div id="carouselExampleControls" class="carousel" data-ride="carousel">
+<div id="carouselExampleControls" class="carousel data-slide" data-ride="carousel">
   <div class="carousel-inner" role="listbox">
-    <div class="carousel-item active parallax"  style="background-image: url(img/banner-bg.jpg);">
+    <div class="carousel-item active parallax"  style="background-image: url(img/banner-bg1.jpg);">
       <img class="d-block img-hidden" src="http://placehold.it/400x400" alt="First slide">
     </div>
     <div class="carousel-item parallax"  style="background-image: url(img/banner-bg2.jpg);">
@@ -115,7 +155,13 @@ BOTTOM
     <div class="carousel-item parallax"  style="background-image: url(img/banner-bg3.jpg);">
       <img class="d-block img-hidden" src="http://placehold.it/400x400" alt="Third slide">
     </div>
-    <div class="carousel-item parallax"  style="background-image: url(img/conference-banner.jpg);">
+    <div class="carousel-item parallax"  style="background-image: url(img/banner-bg4.jpg);">
+      <img class="d-block img-hidden" src="http://placehold.it/400x400" alt="Fourth slide">
+    </div>
+    <div class="carousel-item parallax"  style="background-image: url(img/banner-bg5.jpg);">
+      <img class="d-block img-hidden" src="http://placehold.it/400x400" alt="Fourth slide">
+    </div>
+    <div class="carousel-item parallax"  style="background-image: url(img/banner-bg6.jpg);">
       <img class="d-block img-hidden" src="http://placehold.it/400x400" alt="Fourth slide">
     </div>
 
@@ -130,13 +176,16 @@ BOTTOM
   </a>
 </div>
 <!--End Photo Carousel-->
+
+<!-- events left column -->
 <div class="container-fluid">
   <div class="row home-body">
-    <div class="col-4 home-left">
+    <div class="col-4 home-left hidden-md-down">
     	<div style="padding-left:5rem; padding-top:2rem; padding-right:3rem" >
 			<h2 style="letter-spacing:2px; color:#FFFFFF; font-weight:900; text-shadow: 1px 0 #FFFFFF;">EVENTS</h2>
-			<h4 style="font-size:115%; letter-spacing:2px; color:#FFE700; font-weight:100;">SEPTEMBER</h4>
-			
+
+      <!-- month 1-->
+			<h4 style="font-size:115%; letter-spacing:2px; color:#FFE700; font-weight:100;padding-top:1rem;">SEPTEMBER</h4>
       <!--event 1-->
       <p3 style="padding-left:1rem; color:white;">
         <small>
@@ -162,27 +211,78 @@ BOTTOM
           (5:00 PM)
         </small>
       </p3>
-
-
+      <!--event 3-->
+      <br>
+      <p3 style="padding-left:1rem; color:white;">
+        <small>
+          28: Zero Week BBQ
+        </small>
+      </p3>
+      <br>
+      <p3 style="padding-left:1rem; color:white;">
+        <small>
+          (6:00 PM)
+        </small>
+      </p3>
+      <!--month 2-->
+      <br>
+      <h4 style="font-size:115%; letter-spacing:2px; color:#FFE700; font-weight:100;padding-top:1rem;">OCTOBER</h4>
+      <!--event 1-->
+      <p3 style="padding-left:1rem; color:white;">
+        <small>
+          26: Enormous Activities Fair
+        </small>
+      </p3>
+      <br>
+      <p3 style="padding-left:1rem; color:white;">
+        <small>
+          (12:00 PM)
+        </small>
+      </p3>
+      <!--event 2-->
+      <br>
+      <p3 style="padding-left:1rem; color:white;">
+        <small>
+          27: Cookie Delivery
+        </small>
+      </p3>
+      <br>
+      <p3 style="padding-left:1rem; color:white;">
+        <small>
+          (5:00 PM)
+        </small>
+      </p3>
      	</div>
     </div>
+    <!-- end events column-->
+
+
+    <!-- Right column (about, Resources)-->
     <div class="col home-right">
     	<div style="padding-left:2rem; padding-top:2rem; padding-right:3rem;">
 			<h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;">ABOUT US</h2>
-			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			<p>"Bryan is really bad at creating captions. maybe someday he will contribute an about us section. I'm not sure when that will be. maybe now, mayber later"
       </p>
 			<h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;">RESOURCES</h2>
-			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			<p>"Bryan is really bad at creating captions. maybe someday he will contribute an about us section. I'm not sure when that will be. maybe now, mayber later"
       </p>
      	</div>
     </div>
   </div>
+  <!-- Footer (Contact, Sponsors) -->
   <div class="row home-bottom">
-		<div class="col-4 home-bottomleft">
-		1 of 2
+		<div class="col-4 home-bottomleft hidden-md-down" style="padding-top:1rem; padding-left:5rem;">
+		  <p>CONTACT</p>
+      <p style="padding-top:1rem; font-size:65%;color:black;">-contact the Society</p>
+      <p style="font-size:65%;color:black;">-contact the Daniel</p>
 		</div>
-		<div class="col home-bottomright">
-			<p>Sponsors go here</p>
+		<div class="col" style="padding-top:1rem; padding-left:2rem;">
+			<p>SPONSORS</p>
+      <span>
+        <img src="img/sponsors/blueprint-logo.png" style="padding-left:2rem;max-width:14rem; height:auto;"></img>
+        <img src="img/sponsors/kaplan-logo.png" style="padding-left:2rem; max-width:10rem; height:auto;"></img>
+      </span>
+      <p style="padding-top:3rem; font-size:65%;color:black;">&copy2017 Code by Daniel Li, Design by Amy Ye</p>
 		</div>
 	</div>
 </div>
