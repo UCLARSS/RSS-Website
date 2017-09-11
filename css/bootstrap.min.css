@@ -5581,6 +5581,7 @@ button.close {
     background-position: 50% 50%;
     height: 35rem;
 }
+
 @media (-webkit-transform-3d) {
     .carousel-item {
         -webkit-transition: -webkit-transform .6s ease-in-out;

@@ -29,7 +29,7 @@ body {
     height:100%;
 }
 .home-body{
-    height:60rem;
+    height:40rem;
 }
 .home-right{
 
@@ -38,17 +38,22 @@ body {
     background-color: #2c86c0!important;
 }
 .home-bottom{
-    height:8rem;
+    height:12rem;
     background-color:#FFE700;
+    color: #2c86c0;
+    font-weight:100;
+    letter-spacing:2px;
 }
 /*hidden image for the banner*/
 .img-hidden{
     visibility: hidden;
 }
 /*custom css to deal with parallax in carousel*/
+/*it also deals with the image filter*/
 .parallax{
     height: 500px; 
     opacity:0.7;
+    filter:brightness(50%);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
