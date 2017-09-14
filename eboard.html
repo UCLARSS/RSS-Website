@@ -82,7 +82,7 @@
 	max-height: 70%;
 	max-width: 70%;
 
-   	transition: all 1s ease;
+   	transition: all .5s ease;
     }
 
     img:hover {
@@ -90,16 +90,26 @@
 	-webkit-filter: brightness(.5);
     }
 
-    .overlay {
-  	z-index: 100;
-  	position: absolute;
-  	color: white;
-  	font-size: 24px;
-  	font-weight: bold;
-  	left: 150px;
-  	top: 350px;
+    .text {
+	opacity: 0;
+	color: white;
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+    	font-size: 18px;
     }
 
+    .wrapper {
+	height: auto;
+	width: auto;
+	position: relative;
+	display: inline;
+    }
+
+    .wrapper:hover .text {
+	opacity: 1;
+    }
     
     </style>
 
@@ -171,24 +181,36 @@ BOTTOM
 <div class="container">
   <div class="row">
     <div class="col-sm-6" style="text-align: center">
+      <div class="wrapper">
       	<img src="img/IMG_9727.jpg"/>
+	<div class="text">test test test test test test test test test </div>
+      </div>
       	<h1 class="c_officer_name"> JUNY NGUYEN </h1>
       	<h2 class="c_officer_position"> president </h2>
     </div>
     <div class="col-sm-6" style="text-align: center">
-      <img src="img/DSC_0192_edited.jpg"/>
+      <div class="wrapper">
+        <img src="img/DSC_0192_edited.jpg"/>
+	<div class="text">test test test test test test test test test </div>
+      </div>
       <h1 class="c_officer_name"> IRENA ROY </h1>
       <h2 class="c_officer_position"> internal vp </h2> 
     </div>
   </div>
   <div class="row">
     <div class="col-sm-6" style="text-align: center">
-      <img src="img/DSC_0151_edited.jpg"/>
+      <div class="wrapper">
+      	<img src="img/DSC_0151_edited.jpg"/>
+	<div class="text">test test test test test test test test test </div>
+      </div>
       <h1 class="c_officer_name"> JACOB TODD </h1>
       <h2 class="c_officer_position"> secretary </h2> 
     </div>
     <div class="col-sm-6" style="text-align: center">
-      <img src="img/ucla_logo.png"/>
+      <div class="wrapper">
+        <img src="img/ucla_logo.png"/>
+	<div class="text">test test test test test test test test test </div>
+      </div>
       <h1 class="c_officer_name"> VISESHA KAKARLA </h1>
       <h2 class="c_officer_position"> external vp </h2> 
     </div>
@@ -201,24 +223,36 @@ BOTTOM
 <div class="container">
   <div class="row">
     <div class="col-sm-6" style="text-align: center">
-      <img src="img/DSC_0171_edited.jpg"/>
+      <div class="wrapper">
+        <img src="img/DSC_0171_edited.jpg"/>
+	<div class="text">test test test test test test test test test </div>
+      </div>
       <h1 class="c_officer_name"> BRYAN HU </h1>
       <h2 class="c_officer_position"> co-activities </h2> 
     </div>
     <div class="col-sm-6" style="text-align: center">
-      <img src="img/DSC_0163_edited.jpg"/>
+      <div class="wrapper">
+        <img src="img/DSC_0163_edited.jpg"/>
+	<div class="text">test test test test test test test test test </div>
+      </div>
       <h1 class="c_officer_name"> LUCIA YANG </h1>
       <h2 class="c_officer_position"> co-activities </h2> 
     </div>
   </div>
   <div class="row">
     <div class="col-sm-6" style="text-align: center">
-      <img src="img/DSC_0218_edited.jpg"/>
+      <div class="wrapper">
+        <img src="img/DSC_0218_edited.jpg"/>
+	<div class="text">test test test test test test test test test </div>
+      </div>
       <h1 class="c_officer_name"> JASON ZHANG </h1>
       <h2 class="c_officer_position"> educational programs </h2> 
     </div>
     <div class="col-sm-6" style="text-align: center">
-      <img src="img/DSC_0168_edited.jpg"/>
+      <div class="wrapper">
+        <img src="img/DSC_0168_edited.jpg"/>
+	<div class="text">test test test test test test test test test </div>
+      </div>
       <h1 class="c_officer_name"> KRISTA YANG </h1>
       <h2 class="c_officer_position"> community service </h2> 
     </div>
@@ -231,24 +265,36 @@ BOTTOM
 <div class="container">
   <div class="row">
     <div class="col-sm-6" style="text-align: center">
-      <img src="img/DSC_0222_edited.jpg"/>
+      <div class="wrapper">
+        <img src="img/DSC_0222_edited.jpg"/>
+	<div class="text">test test test test test test test test test </div>
+      </div>
       <h1 class="c_officer_name"> ANIKA MAHAVNI </h1>
       <h2 class="c_officer_position"> treasurer </h2> 
     </div>
     <div class="col-sm-6" style="text-align: center">
-      <img src="img/DSC_0148.jpg"/>
+      <div class="wrapper">
+        <img src="img/DSC_0148.jpg"/>
+	<div class="text">test test test test test test test test test </div>
+      </div>
       <h1 class="c_officer_name"> DANIEL LI </h1>
       <h2 class="c_officer_position"> communications </h2> 
     </div>
   </div>
   <div class="row">
     <div class="col-sm-6" style="text-align: center">
-      <img src="img/DSC_0185_edited.jpg"/>
+      <div class="wrapper">
+        <img src="img/DSC_0185_edited.jpg"/>
+	<div class="text">test test test test test test test test test </div>
+      </div>
       <h1 class="c_officer_name"> KELLIE INOUYE </h1>
       <h2 class="c_officer_position"> publicity </h2> 
     </div>
     <div class="col-sm-6" style="text-align: center">
-      <img src="img/DSC_0183_edited.jpg"/>
+      <div class="wrapper">
+        <img src="img/DSC_0183_edited.jpg"/>
+	<div class="text">test test test test test test test test test </div>
+      </div>
       <h1 class="c_officer_name"> NIEL PATEL </h1>
       <h2 class="c_officer_position"> corporate relations </h2> 
     </div>
@@ -261,19 +307,28 @@ BOTTOM
 <div class="container">
   <div class="row">
     <div class="col-sm-6" style="text-align: center">
-      <img src="img/DSC_0156_edited.jpg"/>
+      <div class="wrapper">
+        <img src="img/DSC_0156_edited.jpg"/>
+	<div class="text">test test test test test test test test test </div>
+      </div>
       <h1 class="c_officer_name"> EMILY SIEGLER </h1>
       <h2 class="c_officer_position"> outreach </h2> 
     </div>
     <div class="col-sm-6" style="text-align: center">
-      <img src="img/DSC_0226_edited.jpg"/>
+      <div class="wrapper">
+        <img src="img/DSC_0226_edited.jpg"/>
+	<div class="text">test test test test test test test test test </div>
+      </div>
       <h1 class="c_officer_name"> HAYK BADALYAN </h1>
       <h2 class="c_officer_position"> L.A.M.P. </h2> 
     </div>
   </div>
   <div class="row">
     <div class="col-sm-6" style="text-align: center">
-      <img src="img/DSC_0173_edited.jpg"/>
+      <div class="wrapper">
+        <img src="img/DSC_0173_edited.jpg"/>
+	<div class="text">test test test test test test test test test </div>
+      </div>
       <h1 class="c_officer_name"> LAUREN SU </h1>
       <h2 class="c_officer_position"> alumni relations/inter-UC liaison </h2> 
     </div>
