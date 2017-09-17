@@ -26,30 +26,27 @@
     padding: 30px;
 }
 .c_officer_name {
-    text-align: center;
-    vertical-align: middle;
-    color: rgb(44,134,192);
-    font-size:25px;
+	text-align: left;
+	vertical-align: left;
+	color: rgb(44,134,192);
+	font-size:25px;
 }
 .c_officer_position {
-    text-align: center;
-    vertical-align: middle;
-    color: rgb(0,0,0);
-
-    font-size:20px;
+	text-align: left;
+	vertical-align: left;
+	color: rgb(0,0,0);
+	font-size:20px;
+}
+.inner {
+	display: inline-block;
+}
+.padding1 {
+	padding: 10px;
+}
+.padding2 {
+	padding: 20px;
 }
 /*hover stuff*/
-
-img {
-    max-height: 70%;
-    max-width: 70%;
-    transition: all .5s ease;
-}
-
-img:hover {
-    filter: brightness(.5);
-    -webkit-filter: brightness(.5);
-}
 
 .text {
     opacity: 0;
@@ -62,10 +59,12 @@ img:hover {
 }
 
 .wrapper {
-    height: auto;
-    width: auto;
-    position: relative;
-    display: inline;
+	height: 300px;
+  	width: 300px;
+  	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	
 }
 
 .wrapper:hover .text {
@@ -73,8 +72,8 @@ img:hover {
 }
 
 .image {
-    height: auto;
-    width: auto;
+	width: 100%;
+   	transition: all .5s ease;
 }
 
 .wrapper:hover .image {
