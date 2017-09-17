@@ -1,0 +1,84 @@
+.headBar {
+    width: 100%;
+    height: 15rem;
+    color: yellow;
+    background-image:
+    linear-gradient( rgba(44,134,192,.5), rgba(44,134,192,.5) ),
+    url(../img/DSC_0283_edited_EBOARD.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem;
+}
+
+.c_head {
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 1000;
+    font-size:60px;
+}
+.c_subhead {
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(44,134,192);
+    font-size:40px;
+    padding: 30px;
+}
+.c_officer_name {
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(44,134,192);
+    font-size:25px;
+}
+.c_officer_position {
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(0,0,0);
+
+    font-size:20px;
+}
+/*hover stuff*/
+
+img {
+    max-height: 70%;
+    max-width: 70%;
+    transition: all .5s ease;
+}
+
+img:hover {
+    filter: brightness(.5);
+    -webkit-filter: brightness(.5);
+}
+
+.text {
+    opacity: 0;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.wrapper {
+    height: auto;
+    width: auto;
+    position: relative;
+    display: inline;
+}
+
+.wrapper:hover .text {
+    opacity: 1;
+}
+
+.image {
+    height: auto;
+    width: auto;
+}
+
+.wrapper:hover .image {
+    filter: brightness(.5);
+    -webkit-filter: brightness(.5);
+}
+    
