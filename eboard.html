@@ -19,6 +19,8 @@
 
     <!-- Custom CSS -->
     <link href="css/home.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/eboard.css" rel="stylesheet">
     <!-- Custom tab icon -->
     <link rel="shortcut icon" href="favicon.ico">
     
@@ -28,56 +30,22 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
     <!--Adding header style-->
-    <style>
-    .headBar {
+	<style>
+	.image {
 	width: 100%;
-	height: 200px;
-	color: yellow;
-	background-image:
-		linear-gradient( rgba(44,134,192,.5), rgba(44,134,192,.5) ),
-		url(img/DSC_0283_edited_EBOARD.jpg);
-	background-attachment: fixed;
-    	background-position: center;
-    	background-repeat: no-repeat;
-    	background-size: cover;
-	padding: 60px;
+   	transition: all .5s ease;
     }
-    .text {
+	
+	.wrapper {
+	height: 300px;
+  	width: 300px;
+  	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	
     }
-    </style>
-
-    <!--Center class-->
-    <style>
-    .c_head {
-    	text-align: center;
-    	vertical-align: middle;
-	font-weight: 1000;
-
-	font-size:60px;
-    }
-    .c_subhead {
-    	text-align: center;
-    	vertical-align: middle;
-	color: rgb(44,134,192);
-
-	font-size:40px;
-	padding: 30px;
-    }
-    .c_officer_name {
-	text-align: left;
-	vertical-align: left;
-	color: rgb(44,134,192);
-
-	font-size:25px;
-    }
-    .c_officer_position {
-	text-align: left;
-	vertical-align: left;
-	color: rgb(0,0,0);
-
-	font-size:20px;
-    }
-    .inner {
+	
+	.inner {
 	display: inline-block;
     }
     .padding1 {
@@ -86,48 +54,8 @@
     .padding2 {
 	padding: 20px;
     }
-    </style>
-
-    <!--Hover Stuff-->
-    <style>
-
-
-    .text {
-	opacity: 0;
-	color: white;
-    	position: absolute;
-    	top: 50%;
-    	left: 50%;
-    	transform: translate(-50%, -50%);
-    	font-size: 18px;
-    }
-
-    .wrapper {
-	height: 300px;
-  	width: 300px;
-  	margin: 0 auto;
-	overflow: hidden;
-	position: relative;
+	</style>
 	
-    }
-
-    .wrapper:hover .text {
-	opacity: 1;
-    }
-
-    .image {
-	width: 100%;
-
-   	transition: all .5s ease;
-    }
-
-    .wrapper:hover .image {
-	filter: brightness(.5);
-	-webkit-filter: brightness(.5);
-    }
-    
-    </style>
-
 </head>
 
 <body>
@@ -183,35 +111,36 @@ BOTTOM
 </nav>
 <!-- end navbar-->
 
+<!--header-->
 <div class = "headBar">
 	<h1 class="c_head"> LEADERSHIP </h1>
 </div>
 
+<!--start of board of directors page-->
 <div class="container-fluid">
-  <div class="row">
-	<div class="col hidden-md-down" style="background-color: #2c86c0" >
-<!--start of the navigation section (left column)--> 
-  
-	</div>
-<!--end of the left column-->	
-	
-	<div class="col">
-<!--start of board of directors page (right column)-->
-		<div>
-			<h1 class="c_subhead"> EXECUTIVE BOARD </h1>
-		</div>
-
-		<div class="container" style="padding-bottom: 50px">
-		  <div class="row">
+  <div class = "row" style="color:white;">
+    <div class ="col-sm-4 hidden-md-down"style="background-color:#2c86c0;">
+      <div style="position: sticky; top: 5rem;">
+        <h3 style="padding-top:3rem; padding-left:2rem;"><a href="#exec_board"style="color:white; text-decoration:none;">Eboard</a></h3>
+        <h3 style="padding-top:1rem; padding-left:3rem;"><a href="#exec_board">exec board</a></h3>
+        <h3 style="padding-top:1rem; padding-left:3rem;"><a href="#int_affairs">int affairs</a></h3>
+      </div>
+    </div>
+    <!-- RIGHT SIDE: EBOARD INFO -->
+    <div class ="col-sm-8">
+    <!-- EXECUTIVE BOARD section-->
+    <h1 class="c_subhead"> <a name="exec_board">EXECUTIVE BOARD</a></h1>
+    <!--Juny and Irena, first row-->
+    	<div class="row">
 			<div class="col-sm-6 padding2" style="text-align: center">
-			<div class="inner">
+				<div class="inner">
 					<div class="wrapper">
-				<img src="img/IMG_9727.jpg" class="image"/>
-				<div class="text">test test test test test test test test test </div>
+						<img src="img/IMG_9727.jpg" class="image"/>
+						<div class="text">test test test test test test test test test </div>
 					</div>
-					<h1 class="c_officer_name"> JUNY NGUYEN </h1>
-					<h2 class="c_officer_position"> president </h2>
-			</div>
+						<h1 class="c_officer_name"> JUNY NGUYEN </h1>
+						<h2 class="c_officer_position"> president </h2>
+				</div>
 			</div>
 			<div class="col-sm-6 padding2" style="text-align: center">
 			<div class="inner">
@@ -223,177 +152,178 @@ BOTTOM
 					<h2 class="c_officer_position"> internal vp </h2>
 			</div> 
 			</div>
-		  </div>
+		</div>
+    <!--Jake and Visesha, second row-->
 		  <div class="row">
 			<div class="col-sm-6 padding2" style="text-align: center">
-			<div class="inner">
+				<div class="inner">
 					<div class="wrapper">
-					<img src="img/DSC_0151_edited.jpg" class="image"/>
-				<div class="text">test test test test test test test test test </div>
+						<img src="img/DSC_0151_edited.jpg" class="image"/>
+						<div class="text">test test test test test test test test test </div>
 					</div>
 					<h1 class="c_officer_name"> JACOB TODD </h1>
 					<h2 class="c_officer_position"> secretary </h2>
-			</div> 
+				</div> 
 			</div>
 			<div class="col-sm-6 padding2" style="text-align: center">
-			<div class="inner">
+				<div class="inner">
 					<div class="wrapper">
-					<img src="img/ucla_logo.png" class="image"/>
-				<div class="text">test test test test test test test test test </div>
+						<img src="img/ucla_logo.png" class="image"/>
+						<div class="text">test test test test test test test test test </div>
 					</div>
 					<h1 class="c_officer_name"> VISESHA KAKARLA </h1>
 					<h2 class="c_officer_position"> external vp </h2>
-			</div> 
+				</div> 
 			</div>
 		  </div>
-		</div>
-
-		<div>
-			<h1 class="c_subhead"> INTERNAL AFFAIRS </h1>
-		</div>
-		<div class="container" style="padding-bottom: 50px">
-		  <div class="row">
+    <!--INTERNAL AFFAIRS section-->
+    <h1 class="c_subhead"> <a name="int_affairs">INTERNAL AFFAIRS </a></h1>
+    <div class="row">
+      <!--column 1, bryan-->
 			<div class="col-sm-6 padding2" style="text-align: center">
-			<div class="inner">
+				<div class="inner">
 					<div class="wrapper">
-					<img src="img/DSC_0171_edited.jpg" class="image"/>
-				<div class="text">test test test test test test test test test </div>
+						<img src="img/DSC_0171_edited.jpg" class="image"/>
+						<div class="text">test test test test test test test test test </div>
 					</div>
 					<h1 class="c_officer_name"> BRYAN HU </h1>
 					<h2 class="c_officer_position"> co-activities </h2>
-			</div> 
+				</div> 
 			</div>
-			<div class="col-sm-6 padding2" style="text-align: center">
-			<div class="inner">
+      <!--end column 1-->
+      <!--column 2, lucia-->
+      		<div class="col-sm-6 padding2" style="text-align: center">
+				<div class="inner">
 					<div class="wrapper">
-					<img src="img/DSC_0163_edited.jpg" class="image"/>
-				<div class="text">test test test test test test test test test </div>
+						<img src="img/DSC_0163_edited.jpg" class="image"/>
+						<div class="text">test test test test test test test test test </div>
 					</div>
 					<h1 class="c_officer_name"> LUCIA YANG </h1>
 					<h2 class="c_officer_position"> co-activities </h2>
-			</div> 
+				</div> 
 			</div>
-		  </div>
-		  <div class="row">
-			<div class="col-sm-6 padding2" style="text-align: center">
+      <!--end column 2, lucia-->
+    </div>
+	<div class="row">
+		<div class="col-sm-6 padding2" style="text-align: center">
 			<div class="inner">
-					<div class="wrapper">
+				<div class="wrapper">
 					<img src="img/DSC_0218_edited.jpg" class="image"/>
-				<div class="text">test test test test test test test test test </div>
-					</div>
-					<h1 class="c_officer_name"> JASON ZHANG </h1>
-					<h2 class="c_officer_position"> educational programs </h2>
+					<div class="text">test test test test test test test test test </div>
+				</div>
+				<h1 class="c_officer_name"> JASON ZHANG </h1>
+				<h2 class="c_officer_position"> educational programs </h2>
 			</div> 
-			</div>
-			<div class="col-sm-6 padding2" style="text-align: center">
+		</div>
+		<div class="col-sm-6 padding2" style="text-align: center">
 			<div class="inner">
-					<div class="wrapper">
+				<div class="wrapper">
 					<img src="img/DSC_0168_edited.jpg" class="image"/>
-				<div class="text">test test test test test test test test test </div>
-					</div>
-					<h1 class="c_officer_name"> KRISTA YANG </h1>
-					<h2 class="c_officer_position"> community service </h2>
+					<div class="text">test test test test test test test test test </div>
+				</div>
+				<h1 class="c_officer_name"> KRISTA YANG </h1>
+				<h2 class="c_officer_position"> community service </h2>
 			</div> 
-			</div>
-		  </div>
 		</div>
-
-		<div>
-			<h1 class="c_subhead"> LOGISTICS DIVISION </h1>
-		</div>
+	</div>
+	
+	<!--logistics division section-->
+	<div>
+		<h1 class="c_subhead"> LOGISTICS DIVISION </h1>
+	</div>
 		<div class="container" style="padding-bottom: 50px">
 		  <div class="row">
 			<div class="col-sm-6 padding2" style="text-align: center">
-			<div class="inner">
+				<div class="inner">
 					<div class="wrapper">
-					<img src="img/DSC_0222_edited.jpg" class="image"/>
-				<div class="text">test test test test test test test test test </div>
+						<img src="img/DSC_0222_edited.jpg" class="image"/>
+						<div class="text">test test test test test test test test test </div>
 					</div>
 					<h1 class="c_officer_name"> ANIKA MAHAVNI </h1>
 					<h2 class="c_officer_position"> treasurer </h2>
-			</div> 
+				</div> 
 			</div>
 			<div class="col-sm-6 padding2" style="text-align: center">
-			<div class="inner">
+				<div class="inner">
 					<div class="wrapper">
-					<img src="img/DSC_0148.jpg" class="image"/>
-				<div class="text">test test test test test test test test test </div>
+						<img src="img/DSC_0148.jpg" class="image"/>
+						<div class="text">test test test test test test test test test </div>
 					</div>
 					<h1 class="c_officer_name"> DANIEL LI </h1>
 					<h2 class="c_officer_position"> communications </h2>
-			</div> 
+				</div> 
 			</div>
 		  </div>
 		  <div class="row">
 			<div class="col-sm-6 padding2" style="text-align: center">
-			<div class="inner">
+				<div class="inner">
 					<div class="wrapper">
-					<img src="img/DSC_0185_edited.jpg" class="image"/>
-				<div class="text">test test test test test test test test test </div>
+						<img src="img/DSC_0185_edited.jpg" class="image"/>
+						<div class="text">test test test test test test test test test </div>
 					</div>
 					<h1 class="c_officer_name"> KELLIE INOUYE </h1>
 					<h2 class="c_officer_position"> publicity </h2>
-			</div> 
+				</div> 
 			</div>
 			<div class="col-sm-6 padding2" style="text-align: center">
-			<div class="inner">
+				<div class="inner">
 					<div class="wrapper">
-					<img src="img/DSC_0183_edited.jpg" class="image"/>
-				<div class="text">test test test test test test test test test </div>
+						<img src="img/DSC_0183_edited.jpg" class="image"/>
+						<div class="text">test test test test test test test test test </div>
 					</div>
 					<h1 class="c_officer_name"> NIEL PATEL </h1>
 					<h2 class="c_officer_position"> corporate relations </h2>
-			</div> 
+				</div> 
 			</div>
 		  </div>
 		</div>
+		<!--END logistics division section-->
 
-		<div>
-			<h1 class="c_subhead"> EXTERNAL AFFAIRS </h1>
-		</div>
+	<!--external affairs section-->
+	<div>
+		<h1 class="c_subhead"> EXTERNAL AFFAIRS </h1>
+	</div>
 		<div class="container" style="padding-bottom: 50px">
 		  <div class="row">
 			<div class="col-sm-6 padding2" style="text-align: center">
-			<div class="inner">
+				<div class="inner">
 					<div class="wrapper">
-					<img src="img/DSC_0156_edited.jpg" class="image"/>
-				<div class="text">test test test test test test test test test </div>
+						<img src="img/DSC_0156_edited.jpg" class="image"/>
+						<div class="text">test test test test test test test test test </div>
 					</div>
 					<h1 class="c_officer_name"> EMILY SIEGLER </h1>
 					<h2 class="c_officer_position"> outreach </h2> 
-			</div>
+				</div>
 			</div>
 			<div class="col-sm-6 padding2" style="text-align: center">
-			<div class="inner">
+				<div class="inner">
 					<div class="wrapper">
-					<img src="img/DSC_0226_edited.jpg" class="image"/>
-				<div class="text">test test test test test test test test test </div>
+						<img src="img/DSC_0226_edited.jpg" class="image"/>
+						<div class="text">test test test test test test test test test </div>
 					</div>
 					<h1 class="c_officer_name"> HAYK BADALYAN </h1>
 					<h2 class="c_officer_position"> L.A.M.P. </h2> 
-			</div>
+				</div>
 			</div>
 		  </div>
 		  <div class="row">
 			<div class="col-sm-6 padding2" style="text-align: center">
-			<div class="inner">
+				<div class="inner">
 					<div class="wrapper">
-					<img src="img/DSC_0173_edited.jpg" class="image"/>
-				<div class="text">test test test test test test test test test </div>
+						<img src="img/DSC_0173_edited.jpg" class="image"/>
+						<div class="text">test test test test test test test test test </div>
 					</div>
 					<h1 class="c_officer_name"> LAUREN SU </h1>
 					<h2 class="c_officer_position"> alumni relations/inter-UC liaison </h2> 
-			</div>
+				</div>
 			</div>
 		  </div>
 		</div>
-		<!--end of board of directors page-->
-	</div>
+		<!--END external affairs section-->
+    </div>
+    <!--end right column eboard bios-->
+  </div>
 </div>
-</div>
-
-
-
 </body>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
