@@ -24,6 +24,8 @@
     <!-- Calendar CSS -->
     <link rel="stylesheet" href="css/calendar.css">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -32,9 +34,34 @@
 </head>
 
 <body>
+<!--create temporary dialog box -->
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" style="color:black;">Coming Soon</h4>
+      </div>
+      <div class="modal-body">
+        <p style="color:black;">This feature is in development. Thank you for your patience.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" style="color:black;">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- end modal-->
+
+<!-- start navbar -->
 <!-- 
 TOP
 -->
+<div class="container-fluid">
 <nav class="navbar navbar-toggleable-sm navbar-inverse fixed-top" id="topnav">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2">
         <span class="navbar-toggler-icon"></span>
@@ -49,6 +76,12 @@ TOP
             </li>
         </ul>
         <ul class="navbar-nav">
+            <li class="nav-item">
+              <a style="font-size:1.5rem; padding-right:1rem;padding-top:0.3rem;color:white;text-decoration:none;" class="fa" href="https://www.instagram.com/uclarss/">&#xf16d;</a>
+            </li>
+            <li class="nav-item">
+              <a style="font-size:1.5rem; padding-right:1rem;padding-top:0.3rem;color:white;text-decoration:none;" class="fa" href="https://www.facebook.com/groups/2200018188/">&#xf082;</a>
+            </li>
             <li class="nav-item">
                 <button type="button" class="btn btn-outline-login" data-toggle="modal" data-target="#myModal" style="float:right;">LOG IN</button>
             </li>
@@ -81,6 +114,7 @@ BOTTOM
         </ul>
     </div>
 </nav>
+</div>
 <!-- end navbar-->
 
 <!-- Calendar -->
@@ -96,8 +130,5 @@ BOTTOM
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <!--script for different speeds for scrolling-->
-<script src="js/scroll.js"></script>
-<!--script for transparent scroll-->
-<script src="js/transparentscroll.js"></script>
 
 </html>

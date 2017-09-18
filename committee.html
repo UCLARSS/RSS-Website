@@ -26,6 +26,8 @@
     <!-- Custom tab icon -->
     <link rel="shortcut icon" href="favicon.ico">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -34,9 +36,35 @@
 </head>
 
 <body>
+
+<!--create temporary dialog box -->
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Coming Soon</h4>
+      </div>
+      <div class="modal-body">
+        <p>This feature is in development. Thank you for your patience.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- end modal-->
+
+<!-- start navbar -->
 <!-- 
 TOP
 -->
+<div class="container-fluid">
 <nav class="navbar navbar-toggleable-sm navbar-inverse fixed-top" id="topnav">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2">
         <span class="navbar-toggler-icon"></span>
@@ -51,6 +79,12 @@ TOP
             </li>
         </ul>
         <ul class="navbar-nav">
+            <li class="nav-item">
+              <a style="font-size:1.5rem; padding-right:1rem;padding-top:0.3rem;color:white;text-decoration:none;" class="fa" href="https://www.instagram.com/uclarss/">&#xf16d;</a>
+            </li>
+            <li class="nav-item">
+              <a style="font-size:1.5rem; padding-right:1rem;padding-top:0.3rem;color:white;text-decoration:none;" class="fa" href="https://www.facebook.com/groups/2200018188/">&#xf082;</a>
+            </li>
             <li class="nav-item">
                 <button type="button" class="btn btn-outline-login" data-toggle="modal" data-target="#myModal" style="float:right;">LOG IN</button>
             </li>
@@ -83,6 +117,7 @@ BOTTOM
         </ul>
     </div>
 </nav>
+</div>
 <!-- end navbar-->
 
 <!--header-->
@@ -92,11 +127,11 @@ BOTTOM
 
 
 <!--start of board of directors page-->
-<div class="container" style="width:100%;height:100rem;">
+<div class="container" style="width:100%;height:auto;">
   <div class = "row" style="height:100%;color:white;">
     <div class ="col-sm-4 hidden-md-down"style="background-color:#2c86c0;">
       <div style="position: sticky; top: 5rem;">
-        <h3 style="padding-top:3rem; padding-left:2rem;"><a href="#exec_board"style="color:white; text-decoration:none;">General App</a></h3>
+        <h3 style="padding-top:3rem; padding-left:2rem;"><a href="#general"style="color:white; text-decoration:none;">General App</a></h3>
 
         <div class="btn-group"style="padding-left:2rem;">
           <button type="button" class="btn"style="background-color:#2c86c0;color:white;font-size:25px;">Sub Apps</button>
@@ -104,14 +139,14 @@ BOTTOM
             <span class="sr-only">Toggle Dropdown</span>
           </button>
           <div class="dropdown-menu" style="background-color:#2c86c0;">
-            <a class="dropdown-item" href="#internal">Internal Affairs Committee</a>
+            <a class="dropdown-item" href="#commcomm">Communications Committee</a>
+            <a class="dropdown-item" href="#outreach">Outreach Liaison Committee</a>
             <a class="dropdown-item" href="#external">External Affairs Committee</a>
             <a class="dropdown-item" href="#cat">CAT Committee</a>
             <a class="dropdown-item" href="#board">Board of Directors</a>
             <a class="dropdown-item" href="#lamp">LAMP Committee</a>
             <a class="dropdown-item" href="#fun">FUNding Committee</a>
-            <a class="dropdown-item" href="#commcomm">Communications Committee</a>
-            <a class="dropdown-item" href="#outreach">Outreach Liaison Committee</a>
+            <a class="dropdown-item" href="#internal">Internal Affairs Committee</a>
           </div>
         </div>
       </div>
@@ -120,27 +155,47 @@ BOTTOM
     <div class ="col-sm-8">
         <!-- ABOUT COMMITTEES SECTION-->
         <div style="padding-left:2rem; padding-top:2rem; padding-right:3rem;">
-			<!--INTERNAL-->
-			<h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;"><a name="internal">Internal Affairs Committee</a></h2>
+            <!-- GENERAL -->
+            <h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;"><a name="general">General Information</a></h2>
             <br>
             <p style="color:black;">
-                Led by the Internal Vice President (Irena) and Educational Programs Director (Jason), the Internal Affairs Committee manages all matters related to RSS’ers and our society as a whole! From organizing professional development workshops to planning the memorable Winter Retreat, committee members will exercise skills in logistics, professional outreach, and resource management. 
+                Under the Regents Scholar Society at UCLA, committees help spearhead events ranging from educational programs to (near) weekly socials and annual retreats. Joining a committee makes for an excellent opportunity to engage with the society, develop and exercise leadership skills, and implement personal ideas. We encourage everyone to apply!
+            </p>
+            <p style="color:black">
+                For the 2017 – 2018 school year, applicants must submit: A general application and a supplemental application for each committee (up to 2 committees max.)
+            </p>
+            <p style="color:black">
+                A google form application will be released on October 6th .Committee applications will be due October 13th. Please attend the first general meeting for more information regarding committees
+                and the application process.
+            </p>
+            <!-- COMMCOMM-->
+            <h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;"><a name="commcomm">Communications Committee</a></h2>
+            <br>
+            <p style="color:black;">
+                Members of the communications committee get to join the RSS github repo. On this github repo lives the code behind the new RSS website. You will learn how to build a website from scratch with Daniel (or you might already know how to do lots of these things). 
             </p>
 
             <p style="color:black;">
-                Event coordinator: helps plan and execute large-scale events such as Winter Retreat and Spring Banquet with the IVP.
+                The website uses bootstrap as its CSS framework. The next step in the works is to add user login and account features. (Thinking about learning Django)
             </p>
-			
-			<p style="color:black;">
-                Resource Development Coordinator: creates and provides educational resources for members while facilitating the continual growth of the test and syllabus bank. Works closely with the Workshops Coordinator to align resources with applicable development events.
+            </br>
+            <!--outreach-->
+            <h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;"><a name="outreach">Outreach Liason Committee</a></h2>
+            <br>
+            <p style="color:black;">
+                The purpose of the Outreach Liaison Committee is to organize our Overnight Stay Programs for prospective students. OSP Coordinators and Facilitators will put on four first year sessions and one transfer session during spring quarter. Applications will be released mid-fall quarter; program planning will begin winter quarter. 
             </p>
-			
-			<p style="color:black;">
-                Faculty Liaison: serves as the point of communication/outreach between faculty and our society. RSS’ers are the best and brightest at UCLA--help us connect with the best and brightest faculty on campus for mentorship, research, and more!
+            <p style="color:black;">
+                OSP Coordinators: plan and organize our Overnight Stay Program for incoming first year Regents scholars! You’ll be working with other OSP coordinators to plan the OSP schedule and connect with high school students! 
             </p>
-			
-			<p style="color:black;">
-                Workshops Coordinator: organizes various workshops throughout the year, ranging from medical school course planning to professional development. Analyzes and develops new ways to help members improve when applying to internships, research positions, and more.
+            <p style="color:black">
+                Transfer Session Coordinators: Plan and organize our transfer program where we welcome incoming transfer students to UCLA! You will be working with the committee to plan activities both on and off campus, and to help show transfers just how awesome RSS and UCLA are in one jam-packed, fun day! 
+            </p>
+            <p style="color:black">
+                Inter-Society Liaison: Help get other RSS members involved in OSP (such as hosting or mentoring new students). This position is a great way to learn how RSS works behind the scenes! 
+            </p>
+            <p style="color:black">
+                Logistics Coordinators: Help book rooms, organize catering/dining hall meals, and coordinate transportation for OSP and ARL events (such as alumni mixer and Inter-UC events)! You’ll have the opportunity to work with the committee on OSP, as well as with our amazing secretary, Jake Todd! 
             </p>
             </br>
 			<!--EXTERNAL-->
@@ -235,36 +290,29 @@ BOTTOM
                 Furthermore, as part of their scholarship, Regents Scholars gain access to a variety of resources and perks. Not only are Regents Scholars awarded a $2000 merit-based honorarium, but they also enjoy priority registration for classes. Regents Scholars are also guaranteed on-campus housing for four years and on-campus parking permits should they wish to apply and as long as they meet all deadlines and restrictions.
             </p>
 			</br>
-			<!-- COMMCOMM-->
-            <h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;"><a name="commcomm">Communications Committee</a></h2>
+            <!--INTERNAL-->
+            <h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;"><a name="internal">Internal Affairs Committee</a></h2>
             <br>
             <p style="color:black;">
-                Members of the communications committee get to join the RSS github repo. On this github repo lives the code behind the new RSS website. You will learn how to build a website from scratch with Daniel (or you might already know how to do lots of these things). 
+                Led by the Internal Vice President (Irena) and Educational Programs Director (Jason), the Internal Affairs Committee manages all matters related to RSS’ers and our society as a whole! From organizing professional development workshops to planning the memorable Winter Retreat, committee members will exercise skills in logistics, professional outreach, and resource management. 
             </p>
 
             <p style="color:black;">
-                The website uses bootstrap as its CSS framework. The next step in the works is to add user login and account features. (Thinking about learning Django)
+                Event coordinator: helps plan and execute large-scale events such as Winter Retreat and Spring Banquet with the IVP.
+            </p>
+            
+            <p style="color:black;">
+                Resource Development Coordinator: creates and provides educational resources for members while facilitating the continual growth of the test and syllabus bank. Works closely with the Workshops Coordinator to align resources with applicable development events.
+            </p>
+            
+            <p style="color:black;">
+                Faculty Liaison: serves as the point of communication/outreach between faculty and our society. RSS’ers are the best and brightest at UCLA--help us connect with the best and brightest faculty on campus for mentorship, research, and more!
+            </p>
+            
+            <p style="color:black;">
+                Workshops Coordinator: organizes various workshops throughout the year, ranging from medical school course planning to professional development. Analyzes and develops new ways to help members improve when applying to internships, research positions, and more.
             </p>
             </br>
-			<!--outreach-->
-            <h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;"><a name="outreach">Outreach Liason Committee</a></h2>
-            <br>
-            <p style="color:black;">
-                The purpose of the Outreach Liaison Committee is to organize our Overnight Stay Programs for prospective students. OSP Coordinators and Facilitators will put on four first year sessions and one transfer session during spring quarter. Applications will be released mid-fall quarter; program planning will begin winter quarter. 
-            </p>
-            <p style="color:black;">
-                OSP Coordinators: plan and organize our Overnight Stay Program for incoming first year Regents scholars! You’ll be working with other OSP coordinators to plan the OSP schedule and connect with high school students! 
-            </p>
-            <p style="color:black">
-                Transfer Session Coordinators: Plan and organize our transfer program where we welcome incoming transfer students to UCLA! You will be working with the committee to plan activities both on and off campus, and to help show transfers just how awesome RSS and UCLA are in one jam-packed, fun day! 
-            </p>
-            <p style="color:black">
-                Inter-Society Liaison: Help get other RSS members involved in OSP (such as hosting or mentoring new students). This position is a great way to learn how RSS works behind the scenes! 
-            </p>
-            <p style="color:black">
-                Logistics Coordinators: Help book rooms, organize catering/dining hall meals, and coordinate transportation for OSP and ARL events (such as alumni mixer and Inter-UC events)! You’ll have the opportunity to work with the committee on OSP, as well as with our amazing secretary, Jake Todd! 
-            </p>
-			</br>
         </div>
   </div>
     <!--end right column eboard bios-->
