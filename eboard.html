@@ -24,6 +24,8 @@
     <!-- Custom tab icon -->
     <link rel="shortcut icon" href="favicon.ico">
     
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -91,9 +93,34 @@
 </style>
 <body onload="myFunction()">
 
+<!--create temporary dialog box -->
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Coming Soon</h4>
+      </div>
+      <div class="modal-body">
+        <p>This feature is in development. Thank you for your patience.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- end modal-->
+
+<!-- start navbar -->
 <!-- 
 TOP
 -->
+<div class="container-fluid">
 <nav class="navbar navbar-toggleable-sm navbar-inverse fixed-top" id="topnav">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2">
         <span class="navbar-toggler-icon"></span>
@@ -108,6 +135,12 @@ TOP
             </li>
         </ul>
         <ul class="navbar-nav">
+            <li class="nav-item">
+              <a style="font-size:1.5rem; padding-right:1rem;padding-top:0.3rem;color:white;text-decoration:none;" class="fa" href="https://www.instagram.com/uclarss/">&#xf16d;</a>
+            </li>
+            <li class="nav-item">
+              <a style="font-size:1.5rem; padding-right:1rem;padding-top:0.3rem;color:white;text-decoration:none;" class="fa" href="https://www.facebook.com/groups/2200018188/">&#xf082;</a>
+            </li>
             <li class="nav-item">
                 <button type="button" class="btn btn-outline-login" data-toggle="modal" data-target="#myModal" style="float:right;">LOG IN</button>
             </li>
@@ -130,8 +163,6 @@ BOTTOM
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="eboard.html">Eboard</a>
                 <a class="dropdown-item" href="committee.html">Committees</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Scholarship</a>
               </div>
             </li>
             <li class="nav-item active" style="margin-left:2.5rem;">
@@ -140,6 +171,7 @@ BOTTOM
         </ul>
     </div>
 </nav>
+</div>
 <!-- end navbar-->
 
 <!--header-->
@@ -156,9 +188,9 @@ BOTTOM
       <div style="position: sticky; top: 5rem;">
         <h3 style="padding-top:3rem; padding-left:2rem;"><a href="#exec_board" style="color:white; text-decoration:none;">Leadership</a></h3>
         <h3 style="padding-top:1rem; padding-left:4rem;"><a href="#exec_board" style="text-decoration:none; font-size:80%; letter-spacing:2px; color:#FFE700; font-weight:100;">Executive Board</a></h3>
-        <h3 style="padding-top:1rem; padding-left:4rem;"><a href="#int_affairs" style="text-decoration:none; font-size:80%; letter-spacing:2px; color:#FFE700; font-weight:100;">Internal Affairs</a></h3>
-		<h3 style="padding-top:1rem; padding-left:4rem;"><a href="#logistics_div" style="text-decoration:none; font-size:80%; letter-spacing:2px; color:#FFE700; font-weight:100;">Logistics Division</a></h3>
-		<h3 style="padding-top:1rem; padding-left:4rem;"><a href="#ext_affairs" style="text-decoration:none; font-size:80%; letter-spacing:2px; color:#FFE700; font-weight:100;">External Affairs</a></h3>
+        <h3 style="padding-top:0.5rem; padding-left:4rem;"><a href="#int_affairs" style="text-decoration:none; font-size:80%; letter-spacing:2px; color:#FFE700; font-weight:100;">Internal Affairs</a></h3>
+    		<h3 style="padding-top:0.5rem; padding-left:4rem;"><a href="#logistics_div" style="text-decoration:none; font-size:80%; letter-spacing:2px; color:#FFE700; font-weight:100;">Logistics Division</a></h3>
+    		<h3 style="padding-top:0.5rem; padding-bottom:5rem;padding-left:4rem;"><a href="#ext_affairs" style="text-decoration:none; font-size:80%; letter-spacing:2px; color:#FFE700; font-weight:100;">External Affairs</a></h3>
       </div>
     </div>
 	<!--END OF LEFT SIDE: SCROLLSPY-->
@@ -183,7 +215,7 @@ BOTTOM
 							</div>
 						</div>
 							<h1 class="c_officer_name"> JUNY NGUYEN </h1>
-							<h2 class="c_officer_position"> president </h2>
+							<h2 class="c_officer_position"> President </h2>
 					</div>
 				</div>
 				<div class="col-sm-6 padding2" style="text-align: center">
@@ -198,7 +230,7 @@ BOTTOM
 							</div>
 						</div>
 						<h1 class="c_officer_name"> IRENA ROY </h1>
-						<h2 class="c_officer_position"> internal vp </h2>
+						<h2 class="c_officer_position"> Internal VP </h2>
 					</div> 
 				</div>
 			</div>
@@ -216,7 +248,7 @@ BOTTOM
 							</div>
 						</div>
 						<h1 class="c_officer_name"> JACOB TODD </h1>
-						<h2 class="c_officer_position"> secretary </h2>
+						<h2 class="c_officer_position"> Secretary </h2>
 					</div> 
 				</div>
 				<div class="col-sm-6 padding2" style="text-align: center">
@@ -231,7 +263,7 @@ BOTTOM
 							</div>
 						</div>
 						<h1 class="c_officer_name"> VISESHA KAKARLA </h1>
-						<h2 class="c_officer_position"> external vp </h2>
+						<h2 class="c_officer_position"> External VP </h2>
 					</div> 
 				</div>
 			</div>
@@ -256,7 +288,7 @@ BOTTOM
 							</div>
 						</div>
 						<h1 class="c_officer_name"> BRYAN HU </h1>
-						<h2 class="c_officer_position"> co-activities </h2>
+						<h2 class="c_officer_position"> Co-activities </h2>
 					</div> 
 				</div>
 				<!--end column 1, bryan-->
@@ -273,7 +305,7 @@ BOTTOM
 							</div>
 						</div>
 						<h1 class="c_officer_name"> LUCIA YANG </h1>
-						<h2 class="c_officer_position"> co-activities </h2>
+						<h2 class="c_officer_position"> Co-activities </h2>
 					</div> 
 				</div>
 				<!--end column 2, lucia-->
@@ -292,7 +324,7 @@ BOTTOM
 							</div>
 						</div>
 						<h1 class="c_officer_name"> JASON ZHANG </h1>
-						<h2 class="c_officer_position"> educational programs </h2>
+						<h2 class="c_officer_position"> Educational Programs </h2>
 					</div> 
 				</div>
 				<div class="col-sm-6 padding2" style="text-align: center">
@@ -307,7 +339,7 @@ BOTTOM
 							</div>
 						</div>
 						<h1 class="c_officer_name"> KRISTA YANG </h1>
-						<h2 class="c_officer_position"> community service </h2>
+						<h2 class="c_officer_position"> Community Service </h2>
 					</div> 
 				</div>
 			</div>
@@ -331,7 +363,7 @@ BOTTOM
 							</div>
 						</div>
 						<h1 class="c_officer_name"> ANIKA MAHAVNI </h1>
-						<h2 class="c_officer_position"> treasurer </h2>
+						<h2 class="c_officer_position"> Treasurer </h2>
 					</div> 
 				</div>
 				<div class="col-sm-6 padding2" style="text-align: center">
@@ -362,7 +394,7 @@ BOTTOM
 							</div>
 						</div>
 						<h1 class="c_officer_name"> KELLIE INOUYE </h1>
-						<h2 class="c_officer_position"> publicity </h2>
+						<h2 class="c_officer_position"> Publicity </h2>
 					</div> 
 				</div>
 				<div class="col-sm-6 padding2" style="text-align: center">
@@ -377,7 +409,7 @@ BOTTOM
 							</div>
 						</div>
 						<h1 class="c_officer_name"> NIEL PATEL </h1>
-						<h2 class="c_officer_position"> corporate relations </h2>
+						<h2 class="c_officer_position"> Corporate Relations </h2>
 					</div> 
 				</div>
 			</div>
@@ -401,7 +433,7 @@ BOTTOM
 							</div>
 						</div>
 						<h1 class="c_officer_name"> EMILY SIEGLER </h1>
-						<h2 class="c_officer_position"> outreach </h2> 
+						<h2 class="c_officer_position"> Outreach </h2> 
 					</div>
 				</div>
 				<div class="col-sm-6 padding2" style="text-align: center">
@@ -434,7 +466,7 @@ BOTTOM
 							</div>
 						</div>
 						<h1 class="c_officer_name"> LAUREN SU </h1>
-						<h2 class="c_officer_position"> alumni relations/inter-UC liaison </h2> 
+						<h2 class="c_officer_position"> Alumni Relations/Inter-UC Liaison </h2> 
 					</div>
 				</div>
 			</div>
