@@ -29,16 +29,10 @@ body {
     height:100%;
 }
 .home-body{
-    height:55rem;
+    /*height:55rem;*/
 }
-.home-right{
 
-}
-.home-left{
-    background-color: #2c86c0!important;
-}
 .home-bottom{
-    height:12rem;
     background-color:#FFE700;
     color: #2c86c0;
     font-weight:100;
