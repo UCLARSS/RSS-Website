@@ -55,10 +55,13 @@
     position: absolute;
     top: 50%;
 	left: 50%;
-	width: 300px;
-	height: 300px;
+	width: 296px;
+	height: 295px;
     transform: translate(-50%, -50%);
-    font-size: 18px;
+    font-size: 14px;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 5px;
 }
 
 .wrapper {
