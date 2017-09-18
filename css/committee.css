@@ -16,13 +16,6 @@
 .c_head {
     text-align: center;
     vertical-align: middle;
-    font-weight: 1000;
     font-size:60px;
 }
-.c_subhead {
-    text-align: center;
-    vertical-align: middle;
-    color: rgb(44,134,192);
-    font-size:40px;
-    padding: 30px;
-}
+
