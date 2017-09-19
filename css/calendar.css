@@ -24,6 +24,8 @@ body {
   margin: 0 auto;
   height: 40rem;
   overflow: hidden;
+  transform-origin: top left;
+
 }
 
 .header {
@@ -381,4 +383,28 @@ body {
 }
 @keyframes fadeOutShink  {
   to { opacity: 0; padding: 0px; height: 0px; }
+}
+
+@media screen and (max-width: 1000px) {
+	#calendar {
+		-ms-transform: scale(.8, .8); /* IE 9 */
+		-webkit-transform: scale(.8, .8); /* Safari */
+		transform: scale(.8, .8);
+	}
+}
+
+@media screen and (max-width: 720px) {
+	#calendar {
+		-ms-transform: scale(.6, .6); /* IE 9 */
+		-webkit-transform: scale(.6, .6); /* Safari */
+		transform: scale(.6, .6);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#calendar {
+		-ms-transform: scale(.45, .45); /* IE 9 */
+		-webkit-transform: scale(.45, .45); /* Safari */
+		transform: scale(.45, .45);
+	}
 }
