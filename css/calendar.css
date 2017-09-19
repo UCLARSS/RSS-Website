@@ -44,6 +44,7 @@ body {
   letter-spacing: 1px;
 }
 
+
 .left, .right {
   position: absolute;
   width: 0px;
@@ -261,7 +262,7 @@ body {
 .legend {
   position: absolute;
   bottom: 2rem;
-  width: 100%;
+  width: 55rem;
   height: 2rem;
   background: #2673a6;
   line-height: 30px;
