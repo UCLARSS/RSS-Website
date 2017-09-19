@@ -6,11 +6,10 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>RSSLA</title>
 
@@ -30,6 +29,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
 
 </head>
 
@@ -117,9 +117,10 @@ BOTTOM
 
 <!-- Calendar -->
 <div class="container-fluid">
-    <div id="calendar"></div>
-    <script src="https://momentjs.com/downloads/moment.min.js"></script>
-  <script src="js/calendar.js"></script>
+    <div id="calendar"> <!--style="-ms-transform: scale(0.5,0.5); -webkit-transform: scale(0.5,0.5); transform: scale(0.5, 0.5);"-->
+	    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+		<script src="js/calendar.js"></script>
+	</div>
 </div>
 
 </body>
@@ -128,5 +129,9 @@ BOTTOM
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <!--script for different speeds for scrolling-->
+
+<script>
+	window.onresize = sizeAll;
+</script>
 
 </html>
