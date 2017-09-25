@@ -27,16 +27,18 @@
     padding: 30px;
 }
 .c_officer_name {
-	text-align: left;
+    padding-top:1rem;
+	text-align: center;
 	vertical-align: left;
 	color: rgb(44,134,192);
 	font-size:25px;
 }
 .c_officer_position {
-	text-align: left;
+	text-align: center;
 	vertical-align: left;
 	color: rgb(0,0,0);
-	font-size:20px;
+    letter-spacing:1px;
+	font-size:13px;
 }
 .inner {
 	display: inline-block;
