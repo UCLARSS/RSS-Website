@@ -37,6 +37,8 @@ body {
     color: #2c86c0;
     font-weight:100;
     letter-spacing:2px;
+    overflow:hidden;
+    height:15rem;
 }
 /*hidden image for the banner*/
 .img-hidden{
