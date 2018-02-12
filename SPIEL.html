@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--TODO: add navpills, change color of the navbar, make the background image darker..-->
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>RSSLA</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/home.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/SPIEL.css" rel="stylesheet">
+    <!-- Custom tab icon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+
+	
+</head>
+
+<body>
+
+<!--create temporary dialog box -->
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Coming Soon</h4>
+      </div>
+      <div class="modal-body">
+        <p>This feature is in development. Thank you for your patience.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- end modal-->
+
+<!-- start navbar -->
+<!-- 
+TOP
+-->
+<div class="container-fluid">
+<nav class="navbar navbar-toggleable-sm navbar-inverse fixed-top" id="topnav">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbar2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="navbar-brand" href="#">
+                    <img src="img/ucla_logo.png" width="30" height="30" class="d-inline-block align-top" style="margin-right:1rem;"alt="">
+                    REGENTS SCHOLAR SOCIETY AT UCLA
+                </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a style="font-size:1.5rem; padding-right:1rem;padding-top:0.3rem;color:white;text-decoration:none;" class="fa" href="https://www.instagram.com/uclarss/">&#xf16d;</a>
+            </li>
+            <li class="nav-item">
+              <a style="font-size:1.5rem; padding-right:1rem;padding-top:0.3rem;color:white;text-decoration:none;" class="fa" href="https://www.facebook.com/groups/2200018188/">&#xf082;</a>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn btn-outline-login" data-toggle="modal" data-target="#myModal" style="float:right;">LOG IN</button>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- 
+BOTTOM
+-->
+<nav class="navbar navbar-toggleable-sm navbar-light fixed-top fixed-top-2">
+    <div class="navbar-collapse collapse" id="navbar1" style="margin-left:3rem;">
+        <ul class="navbar-nav" style="letter-spacing:2px; font-size: 85%;">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    HOME
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="margin-left:2.5rem; color:black;" >ABOUT</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="eboard.html">Executive Board</a>
+                <a class="dropdown-item" href="committee.html">Committees</a>
+				<a class="dropdown-item" href="constitution.html">Our Constitution</a>
+              </div>
+            </li>
+            <li class="nav-item active" style="margin-left:2.5rem;">
+                <a class="nav-link" href="events.html">EVENTS</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+</div>
+<!-- end navbar-->
+
+<!--header-->
+<div class = "headBar">
+	<h1 class="c_head"> </h1>
+</div>
+<!--END header-->
+
+<!--start of main board of directors section-->
+<div class="container-fluid">
+  <div class = "row" style="color:white;">
+	<!--LEFT SIDE: SCROLLSPY-->
+    <div class ="col-sm-4 hidden-md-down"style="background-color:#2c86c0;">
+      <div style="position: sticky; top: 5rem;">
+        <h3 style="padding-top:3rem; padding-left:2rem;"><a href="#exec_board" style="color:white; text-decoration:none;">Leadership</a></h3>
+        <h3 style="padding-top:1rem; padding-left:4rem;"><a href="#exec_board" style="text-decoration:none; font-size:80%; letter-spacing:2px; color:#FFE700; font-weight:100;">Executive Board</a></h3>
+        <h3 style="padding-top:0.5rem; padding-left:4rem;"><a href="#int_affairs" style="text-decoration:none; font-size:80%; letter-spacing:2px; color:#FFE700; font-weight:100;">Internal Affairs</a></h3>
+    		<h3 style="padding-top:0.5rem; padding-left:4rem;"><a href="#logistics_div" style="text-decoration:none; font-size:80%; letter-spacing:2px; color:#FFE700; font-weight:100;">Logistics Division</a></h3>
+    		<h3 style="padding-top:0.5rem; padding-bottom:5rem;padding-left:4rem;"><a href="#ext_affairs" style="text-decoration:none; font-size:80%; letter-spacing:2px; color:#FFE700; font-weight:100;">External Affairs</a></h3>
+      </div>
+    </div>
+	<!--END OF LEFT SIDE: SCROLLSPY-->
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!--script for different speeds for scrolling-->
+<script src="js/scroll.js"></script>
+<!--script for transparent scroll
+<script src="js/transparentscroll.js"></script>
+currently NOT BEING IMPLEMENTED!
+-->
+
+
+</body>
+</html>
