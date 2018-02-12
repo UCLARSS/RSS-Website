@@ -1,0 +1,97 @@
+.headBar {
+    width: 100%;
+    height: 25rem;
+    color: yellow;
+    background-image:
+    /*linear-gradient( rgba(44,134,192,.5), rgba(44,134,192,.5) ),*/
+    url(../img/SPIEL.jpg);
+    background-attachment: fixed;
+    letter-spacing:8px;
+    background-position: center;
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
+    padding: 5rem;
+}
+
+.c_head {
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 1000;
+    font-size:5vw;
+}
+.c_subhead {
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(44,134,192);
+    font-size:40px;
+    padding: 30px;
+}
+.c_officer_name {
+    padding-top:1rem;
+	text-align: center;
+	vertical-align: left;
+	color: rgb(44,134,192);
+	font-size:25px;
+}
+.c_officer_position {
+	text-align: center;
+	vertical-align: left;
+	color: rgb(0,0,0);
+    letter-spacing:1px;
+	font-size:13px;
+}
+.inner {
+	display: inline-block;
+}
+.padding1 {
+	padding: 10px;
+}
+.padding2 {
+	padding: 20px;
+}
+/*hover stuff*/
+
+.text {
+    opacity: 0;
+    color: white;
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	width: 296px;
+	height: 295px;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 5px;
+}
+
+.wrapper {
+	height: 300px;
+  	width: 300px;
+  	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	
+}
+
+.wrapper:hover .text {
+    opacity: 1;
+}
+
+.image {
+	width: 100%;
+   	transition: all .5s ease;
+}
+
+.wrapper:hover .image {
+    filter: brightness(.5);
+    -webkit-filter: brightness(.5);
+}
+    
+@media screen and (max-width: 480px) {
+	.c_head {
+		font-size:5vh;
+	}
+
+}
