@@ -5,6 +5,33 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/*scaling "Regents Scholars Society" text*/
+.text-scale{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    font-size: 4.5vw;
+}
+/*css stuff for the title text ("Welcome")*/
+.title-text-1 {
+    text-align:center;
+    padding-top:200px;
+    left:20%;
+    position:absolute;
+    color: white;
+    z-index:2;
+    display: flex;
+}
+/*css stuff for the title text ("Regents Scholars")*/
+.title-text-2 {
+    text-align:center;
+    padding-top:300px;
+    left:30%;
+    position:absolute;
+    color: #FFE700;
+    z-index:2;
+    display: flex;
+}
 @font-face {
     font-family: 'Montserrat';
     src: url('https://github.com/google/fonts/blob/master/ofl/montserrat/Montserrat-Light.ttf');
