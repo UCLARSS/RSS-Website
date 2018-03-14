@@ -31,11 +31,20 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
 </head>
-<script type="text/javascript">
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	
+<!-- <script type="text/javascript">
         if (screen.width <= 720) {
         window.location = "mobile/index_m.html";
-    }
-</script>
+    } 
+</script> Deactivate due to current mobile incompatibility -->
 <body>
 <!--create temporary dialog box -->
 <!-- Modal -->
@@ -188,71 +197,9 @@ BOTTOM
 <div class="container-fluid">
   <div class="row home-body">
     <div class="col-sm-4"style="background-color: #2c86c0!important;">
-    	<div style="padding-left:5rem; padding-top:2rem; padding-right:3rem" >
-			<h2 style="letter-spacing:2px; color:#FFFFFF; font-weight:900; text-shadow: 1px 0 #FFFFFF;">EVENTS</h2>
-      <br>
-      <!-- month 1-->
-			<h4 style="font-size:115%; letter-spacing:2px; color:#FFE700; font-weight:100;">SEPTEMBER</h4>
-      <!--event 1-->
-      <p3 style="padding-left:1rem; color:white;">
-        <small>
-          26: Enormous Activities Fair
-        </small>
-      </p3>
-      <br>
-      <p3 style="padding-left:1.5rem; color:white;">
-        <small>
-          (12:00 PM)
-        </small>
-      </p3>
-      <!--event 2-->
-      <br>
-      <p3 style="padding-left:1rem;color:white;">
-        <small>
-          28: Zero Week BBQ
-        </small>
-      </p3>
-      <br>
-      <p3 style="padding-left:1.5rem; color:white;">
-        <small>
-          (6:00 PM)
-        </small>
-      </p3>
-      <!--month 2-->
-      <br>
-      <h4 style="font-size:115%; letter-spacing:2px; color:#FFE700; font-weight:100;padding-top:1rem;">OCTOBER</h4>
-      <!--event 1-->
-      <p3 style="padding-left:1rem; color:white;">
-        <small>
-          4: First GM
-        </small>
-      </p3>
-      <br>
-      <p3 style="padding-left:1.5rem; color:white;">
-        <small>
-          (6:00 PM)
-        </small>
-      </p3>
-      <!--event 2-->
-      <br>
-      <p3 style="padding-left:1rem; color:white;">
-        <small>
-          10: Committee Q&A
-        </small>
-      </p3>
-      <br>
-      <p3 style="padding-left:1.5rem; color:white;">
-        <small>
-          (6:00 PM)
-        </small>
-      </p3>
-      <!--event 3-->
-      <br>
-      <p3 style="padding-left:1rem; color:white;">
-        <small>
-          See <a href=events.html style="color:white;">Events</a>  For More...
-        </small>
-      </p3>
+    	<div style="padding-left:2rem; padding-top:2rem; padding-right:2rem" >
+			<div class="fb-page" data-href="https://www.facebook.com/uclarss/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/uclarss/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/uclarss/">UCLA Regents Scholar Society</a></blockquote></div>
+     
      	</div>
     </div>
     <!-- end events column-->
