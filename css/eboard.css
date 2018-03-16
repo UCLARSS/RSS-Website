@@ -4,7 +4,7 @@
     color: yellow;
     background-image:
     linear-gradient( rgba(44,134,192,.5), rgba(44,134,192,.5) ),
-    url(../img/DSC_0283_edited_EBOARD.jpg);
+    url(../img/Etreat 2.jpg);
     background-attachment: fixed;
     letter-spacing:8px;
     background-position: center;
@@ -55,12 +55,8 @@
     opacity: 0;
     color: white;
     position: absolute;
-    top: 50%;
-	left: 50%;
-	width: 296px;
-	height: 295px;
-    transform: translate(-50%, -50%);
-    font-size: 14px;
+	vertical-align: center;
+    font-size: 12px;
 	padding-left: 3px;
 	padding-right: 3px;
 	padding-top: 5px;
