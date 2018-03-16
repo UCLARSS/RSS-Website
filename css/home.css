@@ -131,3 +131,22 @@ ul.sidebarnav li {
     padding-top: 15px;
     margin-left: 10px;
 }
+
+@media screen and (max-width: 720px) {
+
+.fixed-top-2 { /*distance from top nav*/
+    margin-top: 3.5rem;
+    height: auto;
+    background-color:#FFE700;
+    }
+    #loginmobile {
+    display: none !important;
+    }
+    
+    a.navbar-brand{
+    letter-spacing: -1px;
+    }
+  
+
+
+}
