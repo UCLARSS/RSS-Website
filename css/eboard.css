@@ -4,7 +4,7 @@
     color: yellow;
     background-image:
     linear-gradient( rgba(44,134,192,.5), rgba(44,134,192,.5) ),
-    url(../img/Etreat 2.jpg);
+    url(../img/etreat.jpeg);
     background-attachment: fixed;
     letter-spacing:8px;
     background-position: center;
@@ -56,11 +56,11 @@
     color: white;
     position: absolute;
     top: 50%;
-	left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 12px;
-	padding-left: 3px;
-	padding-right: 3px;
+    transform: translate(0%, -50%);
+    font-size: 11px;
+	letter-spacing:1px;
+	padding-left: 35px;
+	padding-right: 35px;
 	padding-top: 5px;
 }
 
