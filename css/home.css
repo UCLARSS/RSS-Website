@@ -136,6 +136,7 @@ ul.sidebarnav li {
 
 .fixed-top-2 { /*distance from top nav*/
     margin-top: 3.5rem;
+    min-height: 2.2rem;
     height: auto;
     background-color:#FFE700;
     }
