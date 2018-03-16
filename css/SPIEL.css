@@ -89,9 +89,8 @@
     -webkit-filter: brightness(.5);
 }
     
-@media screen and (max-width: 480px) {
-	.c_head {
-		font-size:5vh;
-	}
-
+@media screen and (max-width: 768px) {
+.headBar {
+display: none !important;
+}
 }
