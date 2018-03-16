@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<!--TODO: add navpills, change color of the navbar, make the background image darker..-->
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>RSSLA</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/committee.css" rel="stylesheet">
+    <!-- Custom tab icon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <!-- Custom tab icon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+</head>
+
+<body>
+
+<!--create temporary dialog box -->
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Coming Soon</h4>
+      </div>
+      <div class="modal-body">
+        <p>This feature is in development. Thank you for your patience.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- end modal-->
+
+<!-- start navbar -->
+<!-- 
+TOP
+-->
+<div class="container-fluid">
+<nav class="navbar navbar-toggleable-sm navbar-inverse fixed-top" id="topnav">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbar2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="navbar-brand" href="#">
+                    <img src="img/ucla_logo.png" width="30" height="30" class="d-inline-block align-top" style="margin-right:1rem;"alt="">
+                    REGENTS SCHOLAR SOCIETY AT UCLA
+                </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a style="font-size:1.5rem; padding-right:1rem;padding-top:0.3rem;color:white;text-decoration:none;" class="fa" href="https://www.instagram.com/uclarss/">&#xf16d;</a>
+            </li>
+            <li class="nav-item">
+              <a style="font-size:1.5rem; padding-right:1rem;padding-top:0.3rem;color:white;text-decoration:none;" class="fa" href="https://www.facebook.com/groups/2200018188/">&#xf082;</a>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn btn-outline-login" data-toggle="modal" data-target="#myModal" style="float:right;">LOG IN</button>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- 
+BOTTOM
+-->
+<nav class="navbar navbar-toggleable-sm navbar-light fixed-top fixed-top-2">
+    <div class="navbar-collapse collapse" id="navbar1" style="margin-left:3rem;">
+        <ul class="navbar-nav" style="letter-spacing:2px; font-size: 85%;">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    HOME
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="margin-left:2.5rem; color:black;" >ABOUT</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="about-us.html">The Society</a>
+                <a class="dropdown-item" href="eboard.html">Executive Board</a>
+                <a class="dropdown-item" href="committee.html">Committees</a>
+				<a class="dropdown-item" href="constitution.html">Our Constitution</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown d-inline-block">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="margin-left:2.5rem; color:black;" >EVENTS</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="events.html">Calendar</a>
+            <a class="dropdown-item" href="spiel.html">SPIEL</a>
+          </div>
+        </li>
+		
+		<li class="nav-item active">
+                <a class="nav-link" style="margin-left:2.5rem; color:black;" href="http://rssprospectives.weebly.com/">
+                    PROSPECTIVE SCHOLARS
+                </a>
+            </li>
+		
+        </ul>
+    </div>
+</nav>
+</div>
+<!-- end navbar-->
+
+<!--header-->
+<div class = "headBar">
+    <h1 class="c_head"> WHAT IS RSS?</h1>
+</div>
+
+
+<!--start of board of directors page-->
+<div class="container" style="width:100%;height:auto;">
+  <div class = "row" style="height:100%;color:white;">
+    <div class ="col-sm-4 hidden-md-down"style="background-color:#2c86c0;">
+      <div style="position: sticky; top: 5rem;">
+        <h3 style="padding-top:3rem; padding-left:2rem;"><a href="#general"style="color:white; text-decoration:none;">General Application</a></h3>
+
+        <div class="btn-group"style="padding-left:1rem;">
+          <button type="button" class="btn"style="background-color:#2c86c0;color:white;font-size:25px;">Committee Listing</button>
+          <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#2c86c0;color:white;">
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <div class="dropdown-menu" style="background-color:#2c86c0;">
+	    <a class="dropdown-item" href="#board">Board of Directors</a>
+            <a class="dropdown-item" href="#cat">Community and Activities Team</a>
+            <a class="dropdown-item" href="#commcomm">Communications Committee</a>
+		  <a class="dropdown-item" href="#external">External Affairs Committee</a>
+            
+            <a class="dropdown-item" href="#fun">FUNding Committee</a>
+            <a class="dropdown-item" href="#internal">Internal Affairs Committee</a>
+            <a class="dropdown-item" href="#lamp">Los Angeles Mentorship Program Committee</a>
+		  <a class="dropdown-item" href="#outreach">Outreach Liaison Committee</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- RIGHT SIDE: EBOARD INFO -->
+    <div class ="col-sm-8">
+        <!-- ABOUT RSS SECTION-->
+        <div style="padding-left:2rem; padding-top:2rem; padding-right:3rem;">
+            <!-- GENERAL -->
+            <h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;"><a name="general">General Information</a></h2>
+            <br>
+            <p style="color:black; font-weight:100;">
+               The Regents Scholar Society is an organization comprised of the top 1.5% - judged holistically - applicants at UCLA. Our scholars are some of the brightest, most passionate, and most hard-working students at UCLA! Along with that, the Regents Scholar Society provides various benefits to its members, listed below. Along with that, our society provides a social network: there's always an event coming up or someone interesting to meet!
+            </p>
+            <p style="color:black; font-weight:100;">
+                Our activities include:
+	    <li>
+		    <ul style="color: black;">- <b> Social:</b> Kayaking, Downtown LA adventures, food excursions, and more!</ul>
+		    <ul style="color: black;">- <b> Academic:</b> Peer, faculty, and alumni mentor programs, skills workshops!</ul>
+        <ul style="color: black;">- <b> Professional:</b> Faculty and alumni networking events, resume reviews, etc.!</ul>
+	    </li> 
+            </p>
+		<br>      
+	  <p style="color:black; font-weight: 100;">
+		  Please attend the first general meeting for more information regarding committees
+                and the application process. If you <i> cannot </i> attend the general meeting, we will be having an information session on Wednesday, October 11th at 7PM in the De Neve Jacaranda room!
+		</p>
+	  </br>
+		<!-- BOARD OF DIRECTORS-->
+            <h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;"><a name="board">Board of Directors</a></h2>
+            <br>
+            <p style="color:black; font-weight:100;">
+                Whether this is your first year or your fourth, you have an opinion on how our society runs! The board of directors identifies the needs of RSSers and aligns our resources with their goals. Gain experience in event management, project development, budget balancing, and more. This committee is perfect for those who have a general interest in our society!
+            </p>
+
+            <p style="color:black; font-weight:100;">
+		    <i>Director of Projects:</i> manages a project from start to finish - project directors are collaborative and creative critical thinkers.
+            </p>
+			
+			<p style="color:black; font-weight:100;">
+				<i>Director of Finance:</i> decide budgets for our projects and analyze the financial problems our society faces to find unique/creative solutions. Example tasks include finding more affordable vendors or securing sponsorships/discounts.
+            </p>
+			
+			<p style="color:black; font-weight:100;">
+				<i>Director of Freshmen Affairs:</i> be a representative for the freshmen class of RSS! The needs of first-years change every year, and you’ll be in charge of figuring out what those needs are
+            </p>
+			
+			<p style="color:black; font-weight:100;">
+				<i>Director of Transfer & Non-traditional Student Affairs:</i> transfer and non-traditional students are often underrepresented in society leadership and affairs - help be the change! This position gives transfer and non-traditionals a voice to help guide the society in developing resources and programs geared towards their own needs.
+            </p>
+			
+			<p style="color:black; font-weight:100;">
+				<i>Director of Internal Development:</i> analyzes all of our internal resources and events, including our current mentorship opportunities, networking events, and workshops. Finds new, innovative ways to benefit members of the society and makes recommendations on possible improvements.
+            </p>
+			
+			<p style="color:black; font-weight:100;">
+				<i>Director of External Development:</i> analyzes all of our external resources and events, including our outreach programs, campus-wide events, and general UCLA presence. Makes recommendations on possible improvements of how to brand the society in the UCLA community and possible campus organization partnership programs.
+            </p>
+		
+            </br>
+	    
+	    <!-- CAT-->
+            <h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;"><a name="cat">Community and Activities Team</a></h2>
+            <br>
+            <p style="color:black; font-weight:100;">
+                The CAT Committee, led by Activities Directors (Bryan and Lucia) and Community Service Director (Krista), is responsible for planning traditional RSS events, implementing new activities, and serving the communities around Los Angeles. From planning bonfires to serving the homeless, the committee will bring the society together and provide unforgettable experiences.
+            </p>
+
+            <p style="color:black; font-weight:100;">
+		    <i>Project Coordinator:</i> With your fellow committee members and committee leaders, you will have the opportunity to brainstorm, develop, and execute your own ideas into society-wide events.
+            </p>
+	 
+            </br>
+	  
+            <!-- COMMCOMM-->
+            <h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;"><a name="commcomm">Communications Committee</a></h2>
+            <br>
+            <p style="color:black; font-weight:100;">
+                Members of the communications committee get to join the RSS github repo. On this github repo lives the code behind the new RSS website. You will learn how to build a website from scratch with Daniel (or you might already know how to do lots of these things). 
+            </p>
+
+            <p style="color:black; font-weight:100;">
+                The website uses bootstrap as its CSS framework. The next step in the works is to add user login and account features. (Thinking about learning Django)
+            </p>
+	
+            </br>
+           
+			<!--EXTERNAL-->
+			<h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;"><a name="external">External Affairs Committee</a></h2>
+            <br>
+            <p style="color:black; font-weight:100;">
+                The External Affairs Committee, led by the External Vice President and Publicity Director, focuses on the major events that we put on for the greater UCLA community. This entails the planning and marketing of SPIEL, Zombie Talks, and other events. This committee is a great opportunity for people interested in event planning, marketing, graphic design, and photography. 
+            </p>
+
+            <p style="color:black; font-weight:100;">
+		    <i>Graphic Design Intern:</i> help create meaningful flyers, advertisements, and documents for the external affairs activities that the Regent Scholar Society hosts.
+            </p>
+			
+			<p style="color:black; font-weight:100;">
+				<i>Head of Speaker Recruitment:</i> seeks out applicants for SPIEL and helps with the selection process, as well as searches for faculty and guest speakers for speaker events open to the public.
+            </p>
+			
+			<p style="color:black; font-weight:100;">
+				<i>Head of Logistics:</i> in charge of all technical aspects of SPIEL and other speaker events, including scheduling or renting rooms and equipment.
+            </p>
+			
+			<p style="color:black; font-weight:100;">
+				<i>Historian:</i> Takes photographs at RSS events.
+            </p>
+			
+			<p style="color:black; font-weight:100;">
+				<i>Marketing Liaison:</i> Campus-wide event promotion.
+            </p>
+	
+            </br>
+            
+			
+            <!-- FUNding -->
+            <h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;"><a name="fun">FUNding Committee</a></h2>
+            <br>
+            <p style="color:black; font-weight:100;">
+                The FUNding Committee has only one goal: turn RSS into R$$. Members work together to organize fundraisers such as Date Auction, and smaller events such as restaurant dinners and TV tapings. This committee is perfect for RSSers who think creatively, or want to gain experience in planning events and professionally interacting with businesses.
+            </p>
+            <p style="color:black; font-weight:100;">
+		    <i>Funding Project Manager:</i> Helps plan the details and logistics of both small and large-scale RSS fundraisers. Examples of tasks may include setting up Google docs, budgeting events, and picking our next fundraising destination.
+            </p>
+             <p style="color:black; font-weight:100;">
+		     <i>Corporate Liaison:</i> brainstorms cool sponsorship ideas for RSS such as company donations or discounts, and implements those ideas by working directly with those businesses. Assists the CRD with grant writing and fundraiser execution.
+            </p>
+	
+			</br>
+            <!--INTERNAL-->
+            <h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;"><a name="internal">Internal Affairs Committee</a></h2>
+            <br>
+            <p style="color:black; font-weight:100;">
+                Led by the Internal Vice President (Irena) and Educational Programs Director (Jason), the Internal Affairs Committee manages all matters related to RSS’ers and our society as a whole! From organizing professional development workshops to planning the memorable Winter Retreat, committee members will exercise skills in logistics, professional outreach, and resource management. 
+            </p>
+
+            <p style="color:black; font-weight:100;">
+		    <i>Event Coordinator:</i> helps plan and execute large-scale events such as Winter Retreat and Spring Banquet with the IVP.
+            </p>
+            
+            <p style="color:black; font-weight:100;">
+		    <i>Resource Development Coordinator:</i> creates and provides educational resources for members while facilitating the continual growth of the test and syllabus bank. Works closely with the Workshops Coordinator to align resources with applicable development events.
+            </p>
+            
+            <p style="color:black; font-weight:100;">
+		    <i>Faculty Liaison:</i> serves as the point of communication/outreach between faculty and our society. RSS’ers are the best and brightest at UCLA--help us connect with the best and brightest faculty on campus for mentorship, research, and more!
+            </p>
+            
+            <p style="color:black; font-weight:100;">
+		    <i>Workshops Coordinator:</i> organizes various workshops throughout the year, ranging from medical school course planning to professional development. Analyzes and develops new ways to help members improve when applying to internships, research positions, and more.
+            </p>
+
+            </br>
+
+<!-- LAMP -->
+            <h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;"><a name="lamp">Los Angeles Mentorship Program Committee</a></h2>
+            <br>
+            <p style="color:black; font-weight:100;">
+                LAMP serves the underprivileged students of University High through a variety of courses and opportunities. Whether it be by tutoring within AVID, preparing for the SAT/ACT exams, or providing valuable mentorship workshops, LAMP is an opportunity to change lives for the better. LAMP hasn’t been too popular in the last few years, but this committee is going to quickly change that.
+            </p>
+            <p style="color:black; font-weight:100;">
+		    <i>Marketing Coordinators:</i> Marketing coordinators help get RSSers and the campus at-large involved in LAMP -- building awareness of and enthusiasm for the program.
+           </p>
+           <p style="color:black; font-weight:100;">
+		   <i>Workshop Coordinators:</i> Workshop coordinators will help plan out special activities for University High School students. Possibilities include financial aid workshops, college essay workshops, or a visit to UCLA.
+              
+             </p>
+	
+             </br>
+ 	<!--outreach-->
+            <h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;"><a name="outreach">Outreach Liason Committee</a></h2>
+            <br>
+            <p style="color:black; font-weight:100;">
+                The purpose of the Outreach Liaison Committee is to organize our Overnight Stay Programs for prospective students. OSP Coordinators and Facilitators will put on four first year sessions and one transfer session during spring quarter. Applications will be released mid-fall quarter; program planning will begin winter quarter. 
+            </p>
+            <p style="color:black; font-weight:100;">
+		    <i>OSP Coordinators:</i> plan and organize our Overnight Stay Program for incoming first year Regents scholars! You’ll be working with other OSP coordinators to plan the OSP schedule and connect with high school students! 
+            </p>
+            <p style="color:black; font-weight:100;">
+		    <i>Transfer Session Coordinators:</i> Plan and organize our transfer program where we welcome incoming transfer students to UCLA! You will be working with the committee to plan activities both on and off campus, and to help show transfers just how awesome RSS and UCLA are in one jam-packed, fun day! 
+            </p>
+            <p style="color:black; font-weight:100;">
+		    <i>Inter-Society Liaison:</i> Help get other RSS members involved in OSP (such as hosting or mentoring new students). This position is a great way to learn how RSS works behind the scenes! 
+            </p>
+            <p style="color:black; font-weight:100;">
+		    <i>Logistics Coordinators:</i> Help book rooms, organize catering/dining hall meals, and coordinate transportation for OSP and ARL events (such as alumni mixer and Inter-UC events)! You’ll have the opportunity to work with the committee on OSP, as well as with our amazing secretary, Jake Todd! 
+            </p>
+	
+            </br>
+        </div>
+  </div>
+    <!--end right column eboard bios-->
+  <!--end row-->
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!--script for different speeds for scrolling-->
+<script src="js/scroll.js"></script>
+<!--script for transparent scroll
+<script src="js/transparentscroll.js"></script>
+currently NOT BEING IMPLEMENTED!
+-->
+
+
+</body>
+</html>
