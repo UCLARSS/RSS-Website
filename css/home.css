@@ -111,6 +111,8 @@ body {
 a.sidebarnav{
     text-decoration: none;
     color: rgba(255, 255, 255, 1.0);
+    -webkit-transition: color .5s;
+    transition: color .5s;
 }
 
 a.sidebarnav:hover {
