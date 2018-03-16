@@ -19,3 +19,8 @@
     font-size:60px;
 }
 
+@media screen and (max-width: 768px) {
+.c_head {
+		font-size:8vw;
+	}
+}
