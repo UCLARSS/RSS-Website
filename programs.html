@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<!--TODO: add navpills, change color of the navbar, make the background image darker..-->
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>RSSLA</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/home.css" rel="stylesheet">
+    
+    <!-- Custom CSS part 2 -->
+    <link href="css/programs.css" rel="stylesheet">
+    
+    <!-- Custom tab icon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+</head>
+	
+<body>
+	
+<!--create temporary dialog box -->
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Coming Soon</h4>
+      </div>
+      <div class="modal-body">
+        <p>This feature is in development. Thank you for your patience.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- end modal-->
+
+<!-- start navbar -->
+<!-- 
+TOP
+-->
+
+<div class="container-fluid">
+<nav class="navbar navbar-toggleable-sm navbar-inverse fixed-top" id="topnav">
+<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+   <div class="navbar-collapse collapse" style="display:inline-block;">
+         <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="navbar-brand" href="#">
+                    <img src="img/ucla_logo.png" width="30" height="30" class="d-inline-block align-top" style="margin-right:1rem;"alt="">
+                    REGENTS SCHOLAR SOCIETY
+                </a>
+            </li>
+        </ul></div>
+        <div id="loginmobile">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a style="font-size:1.5rem; padding-right:1rem;padding-top:0.3rem;color:white;text-decoration:none;" class="fa" href="https://www.instagram.com/uclarss/">&#xf16d;</a>
+            </li>
+            <li class="nav-item">
+              <a style="font-size:1.5rem; padding-right:1rem;padding-top:0.3rem;color:white;text-decoration:none;" class="fa" href="https://www.facebook.com/groups/2200018188/">&#xf082;</a>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn btn-outline-login" data-toggle="modal" data-target="#myModal" style="float:right;">LOG IN</button>
+            </li>
+        </ul>
+        </div>
+    </div>
+</nav>
+<!-- 
+BOTTOM
+-->
+    
+<nav class="navbar navbar-toggleable-sm navbar-light fixed-top fixed-top-2">
+   <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="navbar-nav" style="letter-spacing:2px; font-size: 85%;">
+            <li class="nav-item active">
+                <a class="nav-link" style="margin-left:3rem" href="index.html">
+                    HOME
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="margin-left:3rem; color:black;" >WHO WE ARE</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="about-us.html">The Society</a>
+                <a class="dropdown-item" href="eboard.html">Executive Board</a>
+                <a class="dropdown-item" href="committee.html">Committees</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown d-inline-block">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="margin-left:3rem; color:black;" >WHAT WE DO</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="events.html">Events Calendar</a>
+            <a class="dropdown-item" onclick="window.location.reload(true);" href="programs.html">Our Programs</a>
+            <a class="dropdown-item" onclick="window.location.reload(true);" href="programs.html#spiel">SPIEL</a>
+             <a class="dropdown-item" onclick="window.location.reload(true);" href="programs.html#fmp">Faculty Mentorship</a>
+            <a class="dropdown-item" onclick="window.location.reload(true);" href="programs.html#lamp">L.A. Mentorship</a>
+            <a class="dropdown-item" onclick="window.location.reload(true);" href="programs.html#osp">Overnight Stay Program</a>
+          </div>
+        </li>
+		
+		<li class="nav-item active">
+                <a class="nav-link" style="margin-left:3rem; color:black;" href="http://rssprospectives.weebly.com/">
+                    PROSPECTIVE SCHOLARS
+                </a>
+            </li>
+		
+        </ul>
+    </div>
+</nav>
+</div>
+<!-- end navbar-->
+<!-- header -->
+<div class="headBar">
+<a href="" id="top"></a>
+    <h1 class="c_head"> PROGRAMS FROM THE SOCIETY</h1>
+</div>
+
+<!-- the content -->
+<div class="container-fluid">
+<div class="row home-body">
+    <div class="col-xs-12 col-sm-4 sidebar">
+	 <ul class="nav flex-column nav-fill">
+    <li><a class="nav-link active" data-toggle="pill" href="#def">Home</a></li>
+    <li><a class="nav-link" data-toggle="pill" href="#spiel">SPIEL</a></li>
+    <li><a class="nav-link" data-toggle="pill" href="#fmp">Faculty Mentorship</a></li>
+    <li><a class="nav-link" data-toggle="pill" href="#lamp">L.A. Mentorship</a></li>
+    <li><a class="nav-link" data-toggle="pill" href="#osp">Overnight Stay</a></li>
+  </ul>
+  </div>
+  <div class="col-xs-12 col-sm-8">
+
+  <div class="tab-content">
+    <div id="def" class="tab-pane fade show active">
+      <h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;"> Our Programs </h2><br>
+      <p>The Regents Scholar Society hosts several different programs that involve different members of the UCLA community. We host events for the general UCLA public - like our speaker event SPIEL, along with programs that give back to our local Westwood community - like our Los Angeles Mentorship Program. We also have RSS-specific programs, like our Faculty Mentorship Program, where members of the society are paired with esteemed members of the faculty. Learn more about the various programs that RSS at UCLA using the links!</p>
+    </div>
+    <div id="spiel" class="tab-pane fade">
+       <h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;"> SPIEL 2018 </h2><br>
+      <p>SPIEL stands for Students Presenting, Innovating, Entertaining and Learning. Inspired by TED Talks, this campus-wide speaker event is put on by students, for students. The aim of SPIEL is to give students from all backgrounds the chance to talk about something that is not only important to the presenters themselves, but is also often important to the greater UCLA and global community. In the past, SPIEL presenters have addressed a variety of topics, ranging from mental health to ground-breaking student research.</p>
+      
+      <p style="color:#2c86c0!important">Come watch SPIEL on April 4th, 2018 from 6-8PM in the Ackerman Viewpoint Room!</p>
+      
+      <p>
+      <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Speaker</th>
+      <th scope="col">Topic</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+      <th scope="row">Rucha Patki</th>
+      <td>Diving Into a Stronger Mentality</td>
+    </tr>
+    <tr>
+      <th scope="row">Dominic Masi</th>
+      <td>Let's Talk About AIDS</td>
+    </tr>
+    <tr>
+      <th scope="row">Umika Kumar</th>
+      <td>Choices, Intuition, and Action</td>
+    </tr>
+    <tr>
+      <th scope="row">Nikita Thareja</th>
+      <td>Becoming Comfortable with Discomfort</td>
+    </tr>
+    <tr>
+      <th scope="row">Jeremiah Barnett</th>
+      <td>Creating Million-Dollar Relationships</td>
+    </tr>
+    <tr>
+      <th scope="row">Devika Chandramohan</th>
+      <td>The Mending Methods of Mindfulness</td>
+    </tr>
+  </tbody>
+</table>
+</p>
+    </div>
+    <div id="fmp" class="tab-pane fade">
+       <h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;"> Faculty Mentorship Program </h2><br>
+      <p>Every year, faculty members from across the campus get involved with the Regents Scholar Society through our Faculty Mentorship Program. This program matches current Regent Scholars to an esteemed faculty member - giving RSSers the exclusive opportunity to form a connection to faculty. In the past, program participants have established strong relationships with their mentor, even to the point where the faculty member became one of their letters of recommendation.</p>
+      
+      <p><h5 style="color: #2c86c0;">IMPORTANT:</h5> You can find a list of our participating faculty mentors below. However - please do not reach out to the faculty directly or ask them to be your mentor. Please reach out to the Educational Programs Director at <a href="mailto:epd@rssla.org">epd@rssla.org</a> if you'd like to connect with a professor using RSS.</p>
+      
+      <p>
+     
+       <table id="myTable" class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Professor</th>
+      <th scope="col">Department</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><th scope="row">Dr. Neil Garg</th><td>Chemistry</td></tr>
+    <tr><th scope="row">Dr. Jesse Harris</th><td>Linguistics</td></tr>
+    <tr><th scope="row">Dr. Christopher Mott</th><td>English</td></tr>
+    <tr><th scope="row">Dr. William Grisham</th><td>Psychology</td></tr>
+    <tr><th scope="row">Dr. Vivian Lew</th><td>Statistics</td></tr>
+    <tr><th scope="row">Dr. Carey Nachenberg</th><td>Computer Science</td></tr>
+    <tr><th scope="row">Dr. Peter Bradley</th><td>Microbiology, Immunology, and Molecular Genetics</td></tr>
+    <tr><th scope="row">Dr. Andy Atkeson</th><td>Economics</td></tr>
+    <tr><th scope="row">Dr. Elaine Hsaio</th><td>Molecular Biology</td></tr>
+    <tr><th scope="row">Dr. David Glanzman</th><td>Integrative Biology and Physiology</td></tr>
+    <tr><th scope="row">Dr. Grace Xiao</th><td>Computational Biology</td></tr>
+    <tr><th scope="row">Dr. Megan McEvoy</th><td>Microbiology, Immunology, and Molecular Genetics</td></tr>
+    <tr><th scope="row">Dr. Patrick Allard</th><td>Institute for Society and Genetics</td></tr>
+    <tr><th scope="row">Dr. Michael Ross</th><td>Political Science</td></tr>
+    <tr><th scope="row">Dr. Akhil Gupta</th><td>Anthropology</td></tr>
+    <tr><th scope="row">Dr. Charlene Villasenor Black</th><td>Art History/Chicanx Studies</td></tr>
+    <tr><th scope="row">Dr. Mike Hill</th><td>Mathematics</td></tr>
+    <tr><th scope="row">Dr. Rogers Brubaker</th><td>Sociology</td></tr>
+    <tr><th scope="row">Dr. Alan Castel</th><td>Cognitive Psychology</td></tr>
+    <tr><th scope="row">Dr. Jeffrey Long</th><td>Molecular, Cell, Developmental Biology</td></tr>
+    <tr><th scope="row">Dr. Donald Buth</th><td>Ecology and Evolutionary Biology</td></tr>
+    <tr><th scope="row">Dr. Jennie Brand</th><td>Sociology and Statistics</td></tr>
+    <tr><th scope="row">Dr. Nathan Kraft</th><td>Ecology and Evolutionary Biology</td></tr>
+    <tr><th scope="row">Dr. Danielle Keenan-Miller</th><td>Clinical Psychology</td></tr>
+    <tr><th scope="row">Dr. Richard Korf</th><td>Computer Science</td></tr>
+    <tr><th scope="row">Dr. Richard Elman</th><td>Mathematics</td></tr>
+    <tr><th scope="row">Dr. Stan Schein</th><td>Psychology</td></tr>
+    <tr><th scope="row">Dr. Robin Kelley</th><td>History</td></tr>
+    <tr><th scope="row">Dr. James Stigler</th><td>Psychology</td></tr>
+    <tr><th scope="row">Dr. Philip Sayegh</th><td>Psychology</td></tr>
+    <tr><th scope="row">Dr. Jesse Rissman</th><td>Psychology</td></tr>
+    <tr><th scope="row">Dr. William McDonald</th><td>Film, TV, and Digital Media</td></tr>
+    <tr><th scope="row">Dr. Jennifer Silvers</th><td>Psychology</td></tr>
+    <tr><th scope="row">Dr. Rory Kelly</th><td>Film, TV, and Digital Media</td></tr>
+    <tr><th scope="row">Dr. Robert Cousins</th><td>Physics</td></tr>
+    <tr><th scope="row">Dr. David Smallberg</th><td>Computer Science</td></tr>
+    <tr><th scope="row">Dr. Sucharit Sarkar</th><td>Mathematics</td></tr>
+    <tr><th scope="row">Dr. Rene Ong</th><td>Physics</td></tr>
+    <tr><th scope="row">Dr. Mark Cohen</th><td>Bioengineering</td></tr>
+    <tr><th scope="row">Dr. Catherine Sandhofer</th><td>Psychology</td></tr>
+    <tr><th scope="row">Dr. Minayo Nasiali</th><td>History</td></tr>
+    <tr><th scope="row">Dr. Lauren McCarthy</th><td>Design and Media Arts</td></tr>
+    <tr><th scope="row">Dr. Marcus Roper</th><td>Mathematics</td></tr>
+    <tr><th scope="row">Dr. Guido Montufar</th><td>Statistics</td></tr>
+    <tr><th scope="row">Dr. Michelle Rensel</th><td>Institute for Society and Genetics</td></tr>
+
+
+  </tbody>
+</table>
+</p>
+      
+    </div>
+    <div id="lamp" class="tab-pane fade">
+       <h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;"> Los Angeles Mentorship Program </h2><br>
+      <p>The Los Angeles Mentorship Program (LAMP) provides UCLA students the opportunity to give back to the local community through tutoring at University High School. This program aims to provide resources to underserved youth - giving them access to SAT and ACT preparation along with workshops regarding financial literacy, college applications, and more.</p>
+      
+      <p> Students interested in tutoring and volunteering through LAMP are not required nor expected to have previous experience, although strong interpersonal and communication skills are required to succeed in the role.</p>
+      
+      <p style="color:#2c86c0!important"> If you'd like to learn more about becoming a LAMP tutor, please contact <a href="mailto:lamp@rssla.org">lamp@rssla.org</a> for more information. You can also redirect any questions you have about the program to that email. Thank you for your interest!</p>
+     
+    </div>
+     <div id="osp" class="tab-pane fade">
+      <h2 style="letter-spacing:2px; color:#2c86c0; font-weight:900; text-shadow: 1px 0 #2c86c0;"> Overnight Stay Program </h2><br>
+      <p>The Regents Scholar Society hosts 4 Overnight Stay Program sessions to allow prospective students to come get to know the UCLA campus! You get to tour our campus, see our housing options, taste our food, and be a true bruin for a weekend! This overnight program is a must for those who are debating between schools - come to UCLA and fall in love with the campus like we did!</p>
+      
+      <p>At OSP, expect that...</p>
+      <ul>
+<li>You'll live in the residence halls with your host, experiencing dorm life and eating at UCLA's dining halls - which are ranked #1 in the country!</li>
+<li>You get to explore Westwood, UCLA's attached college town, and get a taste of life near movie premieres, delicious food, and museum culture!</li>
+<li>You'll be taken on campus tours, getting to see the residence halls, Royce Hall, Powell Library, our Sculpture Gardens, our world-class libraries, and more!</li>
+<li>You get to shadow a class, and see what college academia is truly like!</li>
+<li>You'll make friends - regardless of if you decide to matriculate or not!</li>
+</ul>
+
+<p>Interested in attending? Check out our prospective scholars site <a href="http://rssprospectives.weebly.com/">here</a> for more information on how to sign up! Have questions? Feel free to email our Outreach Director <a href="mailto:outreach@rssla.org">here</a>.</p>
+    </div>
+  </div> 
+  </div> 
+   </div>
+
+  <!-- Footer (Contact, Sponsors) -->
+  <div class="row home-bottom">
+    <div class="col-4">
+      <div style="padding-top:1rem;padding-left:3rem;">
+        <p>CONTACT</p>
+        <p style="padding-top:1rem; font-size:65%;color:black;">-contact the <a href="mailto:president@rssla.org"style="color:black;">Society</a></p>
+        <p style="font-size:65%;color:black;">-contact the <a href="mailto:danielli9988@gmail.com"style="color:black;">Daniel</a></p>
+      </div>
+    </div>
+    <div class="col-8">
+      <div style="padding-top:1rem;padding-left:1.5rem;">
+        <p>SPONSORS</p>
+        <span>
+          <img src="img/sponsors/blueprint-logo.png" style="padding-left:2rem;max-width:14rem; height:auto;"></img>
+          <img src="img/sponsors/kaplan-logo.png" style="padding-left:2rem; max-width:10rem; height:auto;"></img>
+        </span>
+        <p style="padding-top:3rem; padding-bottom:1rem; font-size:65%;color:black;">&copy2017 Code by Daniel Li, Design by Amy Ye</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!--script for different speeds for scrolling-->
+<script src="js/scroll.js"></script>
+<!-- data tables -->
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+<!--script for transparent scroll
+<script src="js/transparentscroll.js"></script>
+currently NOT BEING IMPLEMENTED!
+-->
+
+
+</body>
+
+
+<script type="text/javascript">
+$('.nav').on('shown.bs.tab', 'a', function (e) {
+    if (e.relatedTarget) {
+        $(e.relatedTarget).removeClass('active');
+    }
+})
+
+$(function(){
+  var hash = window.location.hash;
+  hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+});
+
+
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+
+$(document).ready(function() {
+    $('#myTable').DataTable();
+} );
+</script>
+
+</html>
